@@ -1,0 +1,57 @@
+footer {
+    background-color: rgb(24, 31, 68);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-section {
+    flex: 1;
+    padding: 0 15px;
+}
+
+
+.facebook{
+    height:30px;
+    width:30px;
+
+
+   
+}
+
+.instagram{
+    height: 30px;
+    width:30px;
+   
+    
+}
+
+.tiktok{
+    height: 30px;
+    width:30px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-section ul{
+    display: flex;
+    padding-right: 10px; /* Aligns items to the start of the container */
+    gap: 10px; 
+}
+
+.footer-bottom {
+    background-color: #95A3B3;
+    justify-content: center;
+    padding:0;
+    font-size: small;
+    
+}
+
+
+

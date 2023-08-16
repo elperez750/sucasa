@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets/PTSans-Regular.ttf') format('truetype');
+   
+  }
+
+ 
+
+
+.background-container {
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: space-between; 
+    position: relative;
+    width: 100%;
+    height: 800px;
+    color: white;
+    font-family: "CustomFont";
+}
+
+.background-container::before {
+    content: "";
+    background: url('../../images/paint.jpg') center/cover no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.text-section {
+    padding: 20px;
+    font-weight: bolder;
+    color: black !important;
+    font-family: "CustomFont";
+}
+
+.paragraph {
+    color: white;
+    font-weight: lighter;
+}
+
+.header {
+    align-self: center;    /* Override the align-items from parent */
+    font-size: 80px;
+    color: black;
+    margin-top: 50px;      /* Give it some space from the top */
+    font-family: "CustomFont";
+}
+
+.overlay-container {
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px;
+    width: 80%;            
+}
+
+.explore {
+    align-self: center;
+    margin-bottom: 50px;  
+    padding: 10px 20px;
+    background-color: #DB3B25;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.explore:hover {
+    background-color: #DB3B25;
+    color: white;
+    opacity: 1;
+}

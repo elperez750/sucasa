@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets/PTSans-Regular.ttf') format('truetype');
+   
+  }
+
+ 
+
+h1, p{
+    font-family: 'CustomFont';
+}
+
+p{
+    font-size: larger;
+}
+
+h1 {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* this makes the section take up the full viewport height */
+}
+
+.center-box {
+    margin: 20px;  /* optional: adds some spacing between content boxes */
+    /* Add any additional styling for your content boxes here */
+}
