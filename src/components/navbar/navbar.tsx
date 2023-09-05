@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import "./styles.css"
+import "./navbar.css"
 import logo from '../../images/sucasa-logo.png';
 
 const Navigation: React.FC = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const nodeRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -23,6 +25,25 @@ const Navigation: React.FC = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (nodeRef.current && event.target instanceof Node && !nodeRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+  
+  
+
+  
+
   return (
     <>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -38,7 +59,14 @@ const Navigation: React.FC = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='ms-auto nav-links'>
               <Nav.Link as={Link} to="/" className="my-link">Home</Nav.Link>
-              <NavDropdown title="Services" id="basic-nav-dropdown" className="my-link">
+              <NavDropdown 
+  title={<Link to="/services" className="my-link" onClick={() => setIsOpen(false)}>Services</Link>} 
+  id="basic-nav-dropdown"
+  show={isOpen}
+  onMouseEnter={() => setIsOpen(true)}
+  onMouseLeave={() => setIsOpen(false)}
+>
+
                   <NavDropdown.Item className='service-links' as={Link} to="/interior">Interior Painting</NavDropdown.Item>
                   <NavDropdown.Item className='service-links' as={Link} to="/exterior">Exterior Painting</NavDropdown.Item>
                   <NavDropdown.Item className='service-links' as={Link} to="/commercial">Commercial Painting</NavDropdown.Item>

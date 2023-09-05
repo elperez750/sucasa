@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
+ 
+}
+
+.insta{
+ 
+  width: 5%
+}
+.top-navbar {
+  background-color: #12213E !important;
+    padding: 0.5rem !important;  
+  
+  }
+ 
+  
+  .my-link {
+    text-decoration: none;
+  }
+  
+  /* This ensures the link remains without an underline even when hovered */
+  .my-link:hover {
+    text-decoration: none;
+  }
+
+  
+  .bottom-navbar {
+  
+    background-color: rgba(255, 255, 255, 0.6) !important;  
+    width: 100% !important;
+    height:100px;
+  }
+
+  .nav-links {
+    font-family: 'CustomFont';
+   
+    font-weight: regulat;
+    font-size: 20px;
+               
+    justify-content: flex-end; 
+}
+
+.my-link{
+  font-family: 'CustomFont';
+  color: black;
+  justify-content: flex-end;
+  display: flex;  
+}
+
+  h3{
+    font-size: medium;
+    font-family: 'CustomFont';
+    color: white;
+   
+  }
+  
+  
+  .nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-links .dropdown-toggle::after {
+  display: none;
+}
+
+.service-links{
+  font-size: large;
+  font-family: 'CustomFont';
+  font-weight: bolder;
+}
+
+
+
+
+  .my-link:hover{
+    color: #DB3B25 !important;
+  }
+
+  
+  .my-link-social:hover{
+    color:#DB3B25 !important;
+
+  }
+  
+
+
+  .logo{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin-right: 10px;  /* Increase/decrease as needed */
+    padding: 1px;        /* Increase/decrease as needed */
+    
+  }
+
+
+
+  .sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+   
+}
+
+/* Add any other existing styles for .top-navbar, .bottom-navbar, etc. below */

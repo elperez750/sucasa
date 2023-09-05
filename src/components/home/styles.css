@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('../../assets/PTSans-Regular.ttf') format('truetype');
+    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
    
   }
 
  
-
-
 .house{
     width: 100%;
     height: 700px;
@@ -25,21 +23,25 @@
     width: 100%;
     height: 700px;
     object-fit:fill;
-    opacity: 0.5;
+    opacity: 0.45;
+    
   }
   
 
+ 
+
   .button-estimate{
     position: absolute;
-    top: 50%;  /* position at the center, but can be adjusted */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -200%); /* center the text */
+    transform: translate(-50%, -150%); /* center the text */
     color: black;
-    z-index: 1;
+   
     font-family: "CustomFont";
     font-weight: bolder;
-    font-size: 70px;
+    font-size: 50px;
   }
+
 
   .text {
     color: white;
@@ -48,6 +50,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
+
   .fire {
     position: absolute;
     top: 60%;
@@ -57,7 +60,6 @@
     background-color: #DB3B25;
     color: white;
     font-family: "CustomFont";
-
     left: 50%;
     transform: translateX(-50%); /* center the button horizontally */
     z-index: 1;
@@ -77,7 +79,7 @@
     font-family: "CustomFont";
     text-align: center;
     padding-bottom: 5%;
-    font-weight: bolder;
+    font-weight: bold;
     
     
   }
@@ -85,6 +87,9 @@
  
   .for-us{
     padding-bottom: 5%;
+    font-family: "CustomFont";
+    font-weight: lighter;
+  
   }
 
   .image-container {
@@ -116,7 +121,7 @@
     z-index: 2;
     color: black;
     font-size: 35px;
-    font-weight: bold;
+   
     
   }
   
@@ -155,6 +160,7 @@
     align-items:start;  /* Adjust based on your preference */
   
     background-color: #12213E;
+    padding-bottom: 3%;
     
 }
 
@@ -185,7 +191,7 @@
   padding-bottom: 5%;
   text-align: left;
   padding-left: 5%;
-  font-size: 60px;
+  font-size: 55px;
   font-family: "CustomFont";
   font-weight: bolder;
 }

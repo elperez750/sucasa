@@ -29,7 +29,7 @@ export default function Home() {
       <div className="img-text">
       
         <img className="house" src={image} alt="house" />
-        <h1 className="button-estimate">Revive, Refresh, Reimagine</h1>
+        <h1 className="button-estimate">PRECISION IN EVERY STROKE</h1>
         <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate</button>
       
   

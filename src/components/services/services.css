@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
+   
+  }
+
+
+
+.image-container {
+    position: relative; /* Set relative positioning for the container */
+    font-family: "CustomFont";
+    width: 100%; /* If you want the image to take the full width of its parent */
+}
+
+
+
+.paintbrush {
+   
+    width: 100%; /* Image takes the full width of the container */
+    height: 200px; /* Keep image aspect ratio */
+}
+
+
+
+.service {
+    position: absolute; /* Absolutely position text inside the image container */
+    top: 50%; /* Start 50% down from the top */
+    left: 50%; /* Start 50% in from the left */
+    transform: translate(-50%, -50%); /* This offsets the text's position to center it */
+    color: white; /* Example color, adjust as necessary */
+    font-size: 24px; /* Adjust size if necessary */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
+    font-family: "CustomFont" !important;
+    font-size: 45px;
+}
+
+
+
+.about-services{
+    font-size:17px;
+    
+    font-family: "CustomFont" !important;
+    padding-bottom: 10%;
+}
+
+
+
+.service-button {
+    border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
+    padding:16px;
+    position: absolute; 
+    border-radius: 10px;
+    background-color: #12213E !important;
+    transition: background-color 0.3s; /* Smooth transition effect */
+    color: white;
+    font-family: "CustomFont";
+    left: 40%;
+    transform: translateY(-100%); /* center the button horizontally */
+    z-index: 1;
+  }
+
+
+
+  .service-button:hover{
+    background-color: white !important;
+    border: 2px solid #12213e;
+    
+  }
+
+  .description{
+    padding: 5%;
+    
+  }
+
+

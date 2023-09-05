@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 
-import './styles.css';
+import './projects.css';
 
 
 const Navigation: React.FC = () => {

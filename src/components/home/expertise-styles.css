@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('../../assets/PTSans-Regular.ttf') format('truetype');
+    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
    
   }
 
@@ -33,9 +33,14 @@
 
 .text-section {
     padding: 20px;
-    font-weight: bolder;
     color: black !important;
+    font-weight: light;
     font-family: "CustomFont";
+}
+
+.small-header{
+    font-weight: lighter !important;
+    font-size: 40px;
 }
 
 .paragraph {
@@ -46,7 +51,8 @@
 .header {
     align-self: center;    /* Override the align-items from parent */
     font-size: 80px;
-    color: black;
+    color: white;
+    font-weight: regular !important;
     margin-top: 50px;      /* Give it some space from the top */
     font-family: "CustomFont";
 }
