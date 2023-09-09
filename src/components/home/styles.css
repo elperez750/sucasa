@@ -11,7 +11,18 @@
     opacity: 0.6;
     padding-bottom: 100px;
 }
-
+.spanish{
+  position: absolute; /* This will position the text over your image */
+    bottom: 0px; /* This positions the div at the bottom of the image */
+    width: 100%; /* This will ensure the div spans the full width of its container */
+    text-align: center; /* This will center the text */
+    background-color: #DB3B25; /* This adds a semi-transparent black background */
+    color: white; 
+    padding: 5px 0; /* This adds some padding at the top and bottom */
+    font-weight: bolder; /* This makes the text bold */
+    font-size: 25px;
+    font-style: italic;
+}
 .img-text {
   position: relative;
   width: 100%; /* you can set to your desired width */
@@ -36,7 +47,6 @@
     left: 50%;
     transform: translate(-50%, -150%); /* center the text */
     color: black;
-   
     font-family: "CustomFont";
     font-weight: bolder;
     font-size: 50px;
@@ -57,7 +67,7 @@
     left: 50%;
     transform: translate(-50%, -150%);
     border-radius: 30px;
-    background-color: #DB3B25;
+    background-color: #12213E;
     color: white;
     font-family: "CustomFont";
     left: 50%;
@@ -67,7 +77,7 @@
 
   .fire:hover {
     background-color: white;
-    color: #DB3B25 !important;
+    color: black !important;
   }
   
   .our-goal{

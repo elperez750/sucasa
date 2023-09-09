@@ -16,8 +16,8 @@ function Footer() {
             <div className="footer-section">
                 <h4>Contact Information</h4>
                 <p>Your Address Here</p>
-                <p>Email: example@email.com</p>
-                <p>Phone: (206) 502-9287</p>
+                <p>Email: jepeto79@hotmail.com</p>
+                <p>Phone: (425) 346-6003</p>
             </div>
 
             <div className="footer-section">

@@ -15,7 +15,6 @@
 
 
 .paintbrush {
-   
     width: 100%; /* Image takes the full width of the container */
     height: 200px; /* Keep image aspect ratio */
 }
@@ -39,7 +38,6 @@
 
 .about-services{
     font-size:17px;
-    
     font-family: "CustomFont" !important;
     padding-bottom: 10%;
 }
@@ -56,8 +54,8 @@
     color: white;
     font-family: "CustomFont";
     left: 40%;
-    transform: translateY(-100%); /* center the button horizontally */
-    z-index: 1;
+    transform: translateY(-100%); 
+   
   }
 
 
@@ -68,9 +66,186 @@
     
   }
 
+  
+
   .description{
     padding: 5%;
     
   }
 
+  .interior-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 2%;
+    padding-bottom: 4%;
+  }
 
+  .interior-text{
+    font-size:15px;
+    
+    
+  }
+  
+
+.interior{
+  height:600px;
+  width:800px;
+  padding-right:2%;
+  
+}
+
+.interior-button {
+  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
+  padding:16px;
+  position: absolute; 
+  border-radius: 10px;
+  background-color: #12213E !important;
+  transition: background-color 0.3s; /* Smooth transition effect */
+  color: white;
+  font-family: "CustomFont";
+  left: 16%;
+  transform: translateY(300%); 
+ 
+}
+
+
+
+.interior-button:hover{
+  background-color: white !important;
+  border: 2px solid #12213e;
+  
+}
+
+
+
+.exterior-container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-left: 2%;
+  padding-bottom: 4%;
+}
+
+.exterior-text{
+  font-size:15px;
+}
+
+.exterior{
+  height:600px;
+  width:800px;
+padding-right:2%;
+
+}
+
+.exterior-button {
+  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
+  padding:16px;
+  position: absolute; 
+  border-radius: 10px;
+  background-color: #12213E !important;
+  transition: background-color 0.3s; /* Smooth transition effect */
+  color: white;
+  font-family: "CustomFont";
+  left: 16%;
+  transform: translateY(300%); 
+ 
+}
+
+
+
+.exterior-button:hover{
+  background-color: white !important;
+  border: 2px solid #12213e;
+  
+}
+
+.commercial-container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-left: 2%;
+  padding-bottom: 4%;
+  
+}
+
+.commercial-text{
+  font-size:15px;
+}
+
+
+.commercial{
+  height:600px;
+  width:800px;
+padding-right:2%;
+
+}
+
+.commercial-button {
+  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
+  padding:16px;
+  position: absolute; 
+  border-radius: 10px;
+  background-color: #12213E !important;
+  transition: background-color 0.3s; /* Smooth transition effect */
+  color: white;
+  font-family: "CustomFont";
+  left: 16%;
+  transform: translateY(300%); 
+ 
+}
+
+
+
+.commercial-button:hover{
+  background-color: white !important;
+  border: 2px solid #12213e;
+  
+}
+
+
+
+.pressure-container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-left: 2%;
+  padding-top:2%;
+  padding-bottom:4%;
+  
+}
+
+
+
+.pressure{
+height:600px;
+width:800px;
+padding-right:2%;
+
+}
+
+.pressure-text{
+  font-size:15px;
+}
+
+.pressure-button {
+  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
+  padding:16px;
+  position: absolute; 
+  border-radius: 10px;
+  background-color: #12213E !important;
+  transition: background-color 0.3s; /* Smooth transition effect */
+  color: white;
+  font-family: "CustomFont";
+  left: 16%;
+  transform: translateY(250%); 
+ 
+}
+
+
+
+.pressure-button:hover{
+  background-color: white !important;
+  border: 2px solid #12213e;
+  
+}
