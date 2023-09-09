@@ -33,7 +33,7 @@ export default function Services() {
     <div className='interior-text'>
             <h1>Interior Painting</h1>
               <p>Interior painting is more than just applying color; it's about capturing a room's essence and mood. The right shade and finish can transform a space, making it a reflection of personal style. It's not just decor, but a canvas where life's stories unfold.</p>
-            </div>
+          </div>
           
             <img className="interior" src={interior_image} alt="interior" /> 
             <button type="button" className="btn btn-custom btn-lg interior-button">Learn More</button>

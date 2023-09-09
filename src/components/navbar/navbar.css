@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'CustomFont';
-  src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
- 
-}
+@import url('https://fonts.googleapis.com/css?family=Domine');
 
 .insta{
  
@@ -33,16 +29,16 @@
   }
 
   .nav-links {
-    font-family: 'CustomFont';
+    font-family: 'Domine';
    
-    font-weight: regulat;
+    font-weight: regular;
     font-size: 20px;
                
     justify-content: flex-end; 
 }
 
 .my-link{
-  font-family: 'CustomFont';
+  font-family: 'Domine';
   color: black;
   justify-content: flex-end;
   display: flex;  
@@ -50,7 +46,7 @@
 
   h3{
     font-size: medium;
-    font-family: 'CustomFont';
+    font-family: 'Domine';
     color: white;
    
   }
@@ -66,8 +62,8 @@
 
 .service-links{
   font-size: large;
-  font-family: 'CustomFont';
-  font-weight: bolder;
+  font-family: 'Domin';
+  
 }
 
 

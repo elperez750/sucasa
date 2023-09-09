@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
 footer {
     background-color: rgb(24, 31, 68);
     color: white;
@@ -11,6 +13,7 @@ footer {
 .footer-section {
     flex: 1;
     padding: 0 15px;
+    font-family: "Domine";
 }
 
 
@@ -37,12 +40,14 @@ footer {
 .footer-section ul {
     list-style-type: none;
     padding: 0;
+    font-family: "Domine";
 }
 
 .social-section ul{
     display: flex;
     padding-right: 10px; /* Aligns items to the start of the container */
     gap: 10px; 
+    font-family: "Domine";
 }
 
 .footer-bottom {
@@ -50,8 +55,11 @@ footer {
     justify-content: center;
     padding:0;
     font-size: small;
+
     
 }
 
 
-
+.contents{
+    font-family: "Domine";
+}

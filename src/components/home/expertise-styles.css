@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
-   
-  }
+ @import url('https://fonts.googleapis.com/css?family=Domine');
 
- 
 
 
 .background-container {
@@ -16,7 +11,7 @@
     width: 100%;
     height: 800px;
     color: white;
-    font-family: "CustomFont";
+    font-family: "Domine";
 }
 
 .background-container::before {
@@ -35,13 +30,17 @@
     padding: 20px;
     color: black !important;
     font-weight: light;
-    font-family: "CustomFont";
+    font-family: "Domine" !important;
 }
+
 
 .small-header{
     font-weight: lighter !important;
     font-size: 40px;
+    font-family: "Domine" !important;
 }
+
+
 
 .paragraph {
     color: white;
@@ -54,8 +53,10 @@
     color: white;
     font-weight: regular !important;
     margin-top: 50px;      /* Give it some space from the top */
-    font-family: "CustomFont";
+    font-family: "Domine";
 }
+
+
 
 .overlay-container {
  
@@ -70,12 +71,16 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 60px;
     width: 80%;            
 }
+
+
 
 .explore {
     align-self: center;

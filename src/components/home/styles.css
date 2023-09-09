@@ -1,16 +1,14 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
-   
-  }
 
+@import url('https://fonts.googleapis.com/css?family=Domine');
  
 .house{
     width: 100%;
     height: 700px;
-    opacity: 0.6;
+    opacity: 0.5;
     padding-bottom: 100px;
 }
+
+
 .spanish{
   position: absolute; /* This will position the text over your image */
     bottom: 0px; /* This positions the div at the bottom of the image */
@@ -19,22 +17,24 @@
     background-color: #DB3B25; /* This adds a semi-transparent black background */
     color: white; 
     padding: 5px 0; /* This adds some padding at the top and bottom */
-    font-weight: bolder; /* This makes the text bold */
+    font-family: "Domine" !important;
     font-size: 25px;
     font-style: italic;
 }
+
+
 .img-text {
   position: relative;
   width: 100%; /* you can set to your desired width */
   height: 600px;
- 
+  
   }
 
   .img-text img{
     width: 100%;
     height: 700px;
     object-fit:fill;
-    opacity: 0.45;
+    
     
   }
   
@@ -46,17 +46,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -150%); /* center the text */
-    color: black;
-    font-family: "CustomFont";
-    font-weight: bolder;
+    color: rgb(8, 3, 3);
+    font-family: "Domine" !important;
+    font-weight: bold;
     font-size: 50px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
 
 
   .text {
     color: white;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: lig;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
@@ -69,7 +70,7 @@
     border-radius: 30px;
     background-color: #12213E;
     color: white;
-    font-family: "CustomFont";
+    font-family: 'Domine' !important;
     left: 50%;
     transform: translateX(-50%); /* center the button horizontally */
     z-index: 1;
@@ -86,7 +87,7 @@
   }
 
   .goal{
-    font-family: "CustomFont";
+    font-family: "Domine";
     text-align: center;
     padding-bottom: 5%;
     font-weight: bold;
@@ -97,7 +98,7 @@
  
   .for-us{
     padding-bottom: 5%;
-    font-family: "CustomFont";
+    font-family: "Domine";
     font-weight: lighter;
   
   }
@@ -131,6 +132,7 @@
     z-index: 2;
     color: black;
     font-size: 35px;
+    font-family: "Domine";
    
     
   }
@@ -177,11 +179,12 @@
 .text-area {
   flex: 1;   /* Takes up 50% of the parent's width */
   padding-right: 20px;  /* Spacing between text and images */
-  font-family: "CustomFont";
+  font-family: "Domine";
   display: flex;
   flex-direction: column;  /* Stack children vertically */
   align-items: center; 
-  color: white !important;
+  color: White!important;
+  font-weight: 100;
    
 }
 
@@ -202,7 +205,7 @@
   text-align: left;
   padding-left: 5%;
   font-size: 55px;
-  font-family: "CustomFont";
+  font-family: "Domine";
   font-weight: bolder;
 }
 
@@ -212,7 +215,7 @@
 }
 
 .first-paragraph{
-  font-family: "CustomFont";
+  font-family: "Domine";
   padding-bottom: 5%;
   font-size:x-large;
   padding-left: 5%;
@@ -220,7 +223,7 @@
 }
 
 .second-paragraph{
-  font-family: "CustomFont";
+  font-family: "Domine";
   padding-bottom: 6%;
   font-size: x-large;
   padding-left: 5%;
@@ -234,7 +237,7 @@
   font-size: 30px !important;
   background-color: #DB3B25 !important;
   color: white !important;
-  font-family: "CustomFont";
+  font-family: "Domine";
   
 }
 

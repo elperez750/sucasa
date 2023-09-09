@@ -1,14 +1,12 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url('../../assets/Heebo-VariableFont_wght.ttf') format('truetype');
-   
-  }
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Domine');
 
 
 .image-container {
     position: relative; /* Set relative positioning for the container */
-    font-family: "CustomFont";
+    font-family: "Domine" !important;
     width: 100%; /* If you want the image to take the full width of its parent */
 }
 
@@ -16,7 +14,7 @@
 
 .paintbrush {
     width: 100%; /* Image takes the full width of the container */
-    height: 200px; /* Keep image aspect ratio */
+    height:320px;
 }
 
 
@@ -28,9 +26,10 @@
     transform: translate(-50%, -50%); /* This offsets the text's position to center it */
     color: white; /* Example color, adjust as necessary */
     font-size: 24px; /* Adjust size if necessary */
+    font-weight: bolder;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
-    font-family: "CustomFont" !important;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
+    font-family: "Domine" !important;
     font-size: 45px;
 }
 
@@ -38,7 +37,7 @@
 
 .about-services{
     font-size:17px;
-    font-family: "CustomFont" !important;
+    font-family: "Domine" !important;
     padding-bottom: 10%;
 }
 
@@ -52,7 +51,7 @@
     background-color: #12213E !important;
     transition: background-color 0.3s; /* Smooth transition effect */
     color: white;
-    font-family: "CustomFont";
+    font-family: "Domine" !important;
     left: 40%;
     transform: translateY(-100%); 
    
@@ -75,23 +74,25 @@
 
   .interior-container{
     display: flex;
-    align-items:center;
-    justify-content: center;
     padding-left: 2%;
     padding-bottom: 4%;
+    padding-top: 10%;
+   
   }
 
   .interior-text{
     font-size:15px;
-    
-    
+    font-family: "Domine" !important;
+    padding-left:10%;
+    padding-right:20%;
   }
   
 
 .interior{
-  height:600px;
-  width:800px;
-  padding-right:2%;
+  height:auto;
+  width: 600px;
+  padding-right:4%;
+  
   
 }
 
@@ -103,9 +104,9 @@
   background-color: #12213E !important;
   transition: background-color 0.3s; /* Smooth transition effect */
   color: white;
-  font-family: "CustomFont";
-  left: 16%;
-  transform: translateY(300%); 
+  font-family: "Domine";
+  left: 20%;
+  transform: translateY(350%); 
  
 }
 
@@ -121,20 +122,22 @@
 
 .exterior-container{
   display: flex;
-  align-items:center;
-  justify-content: center;
   padding-left: 2%;
   padding-bottom: 4%;
+  padding-top: 10%;
 }
 
 .exterior-text{
   font-size:15px;
+  font-family: "Domine";
+  padding-left:10%;
+  padding-right:20%;
 }
 
 .exterior{
-  height:600px;
-  width:800px;
-padding-right:2%;
+  height:auto;
+  width: 600px;
+padding-right:4%;
 
 }
 
@@ -146,10 +149,10 @@ padding-right:2%;
   background-color: #12213E !important;
   transition: background-color 0.3s; /* Smooth transition effect */
   color: white;
-  font-family: "CustomFont";
-  left: 16%;
-  transform: translateY(300%); 
- 
+  font-family: "Domine" !important;
+  left: 20%;
+  transform: translateY(350%); 
+
 }
 
 
@@ -157,27 +160,31 @@ padding-right:2%;
 .exterior-button:hover{
   background-color: white !important;
   border: 2px solid #12213e;
-  
 }
+
 
 .commercial-container{
   display: flex;
-  align-items:center;
-  justify-content: center;
   padding-left: 2%;
   padding-bottom: 4%;
+  padding-top: 10%;
   
 }
 
 .commercial-text{
   font-size:15px;
+  font-family: "Domine";
+  padding-left:10%;
+  padding-right:20%
+
+  
 }
 
 
 .commercial{
-  height:600px;
-  width:800px;
-padding-right:2%;
+height:auto;
+width:600px;
+padding-right:4%;
 
 }
 
@@ -189,9 +196,9 @@ padding-right:2%;
   background-color: #12213E !important;
   transition: background-color 0.3s; /* Smooth transition effect */
   color: white;
-  font-family: "CustomFont";
-  left: 16%;
-  transform: translateY(300%); 
+  font-family: "Domine";
+  left: 20%;
+  transform: translateY(450%); 
  
 }
 
@@ -207,25 +214,26 @@ padding-right:2%;
 
 .pressure-container{
   display: flex;
-  align-items:center;
-  justify-content: center;
   padding-left: 2%;
-  padding-top:2%;
-  padding-bottom:4%;
+  padding-bottom: 4%;
+  padding-top: 10%;
   
 }
 
 
 
 .pressure{
-height:600px;
-width:800px;
-padding-right:2%;
+height:auto;
+width: 600px;
+padding-right:4%;
 
 }
 
 .pressure-text{
   font-size:15px;
+  font-family: "Domine";
+  padding-left:10%;
+  padding-right:20%;
 }
 
 .pressure-button {
@@ -236,9 +244,9 @@ padding-right:2%;
   background-color: #12213E !important;
   transition: background-color 0.3s; /* Smooth transition effect */
   color: white;
-  font-family: "CustomFont";
-  left: 16%;
-  transform: translateY(250%); 
+  font-family: "Domine";
+  left: 20%;
+  transform: translateY(350%); 
  
 }
 
