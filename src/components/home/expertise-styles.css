@@ -53,7 +53,7 @@
     color: white;
     font-weight: regular !important;
     margin-top: 50px;      /* Give it some space from the top */
-    font-family: "Domine";
+    font-family: "Domine" !important;
 }
 
 

@@ -6,7 +6,7 @@ import Goals from "./Goals"
 import Expertise from "./expertise";
 import './styles.css';
 import Sucasa from '../about-sucasa/about-sucasa';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+
 
 
 

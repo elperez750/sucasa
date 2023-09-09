@@ -70,7 +70,7 @@ const Navigation: React.FC = () => {
                   <NavDropdown.Item className='service-links' as={Link} to="/interior">Interior Painting</NavDropdown.Item>
                   <NavDropdown.Item className='service-links' as={Link} to="/exterior">Exterior Painting</NavDropdown.Item>
                   <NavDropdown.Item className='service-links' as={Link} to="/commercial">Commercial Painting</NavDropdown.Item>
-                  <NavDropdown.Item className='service-links' as={Link} to="/pressure-washing">Pressure Washing</NavDropdown.Item>
+                  <NavDropdown.Item className='service-links' as={Link} to="/pressure">Pressure Washing</NavDropdown.Item>
 
               </NavDropdown>
               <Nav.Link as={Link} to="/projects" className="my-link">Projects</Nav.Link>

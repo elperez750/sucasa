@@ -12,6 +12,7 @@ import Interior from './components/interior/interior';
 import Exterior from './components/exterior/exterior';
 import Commercial from './components/commercial/commercial';
 import Location from './components/location/location';
+import Pressure from './components/pressure/pressure';
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path="/exterior" element={<Exterior />} />
         <Route path="/commercial" element={<Commercial />} />
         <Route path="/location" element={<Location />} />
+        <Route path="/pressure" element={<Pressure />} />
       </Routes>
       <Footer />
     </Router>

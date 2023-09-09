@@ -2,8 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from '../../images/interior.jpg';
 import image2 from '../../images/exterior.jpg';
 import image3 from '../../images/commercial.jpg';
+import image5 from '../../images/pressure_wash.jpeg';
 import image4 from '../../images/jesus.jpg';
-
+import { Link } from 'react-router-dom';
 
 function Goals() {
     return (
@@ -28,22 +29,42 @@ function Goals() {
             <h4 className="for-us">For us, making the client happy is our number one priority. We will work closely with you to figure out your needs and satisfy you. Others may overlook the smallest details, but we are dedicated to perfection and quality. We work hard all year and are glad to come help you with your project, rain or shine!</h4>
             <div className='image-container'>
                 <div className='image-wrapper'>
+                <Link to="/interior">
                 <img className="interior" src={image1} alt="interior" /> 
                 <div className='hover-text'>Interior</div>
                 <div className="hover-overlay"></div>
+                </Link>
              </div>
+
              <div className='image-wrapper'>
-                <img className="exterior" src={image2} alt="exterior" /> 
+                <Link to="/exterior">
+                    <img className="exterior" src={image2} alt="exterior" /> 
+                
                 <div className='hover-text'>Exterior</div>
                 <div className="hover-overlay"></div>
+            </Link>
             </div>
+
             <div className='image-wrapper'>
+                <Link to="commercial">
                 <img className="commercial" src={image3} alt="commercial" /> 
                 <div className='hover-text'>Commercial</div>
                 <div className="hover-overlay"></div>
+                </Link>
+            </div>
+            <div className='image-wrapper'>
+                <Link to="/pressure">
+                <img className="pressure" src={image5} alt="pressure" /> 
+                <div className='hover-text'>Pressure Wash</div>
+                <div className="hover-overlay"></div>
+                </Link>
             </div>
             </div> 
             </div>
+
+        
+           
+            
         </section>
 
         </>
