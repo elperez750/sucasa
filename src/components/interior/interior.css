@@ -1,0 +1,10 @@
+.interior-pic{
+    width: 100%;
+    object-fit: cover;
+    height:320px;
+}
+
+
+.free-quote{
+    background-color: #123412;
+}

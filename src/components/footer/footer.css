@@ -1,65 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
 footer {
-    background-color: rgb(24, 31, 68);
-    color: white;
+    
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
+    font-family: "Cabin";
 }
 
+.footer-description {
+    padding-top: 10%;
+    color: gray;
+    font-size: large;
+}
 
+.logo-for-footer {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.about, .follow-us, .quick-links {
+    color: white;
+
+}
 
 .footer-section {
-    flex: 1;
-    padding: 0 15px;
-    font-family: "Domine";
+    padding: 3%;
 }
 
-
-.facebook{
-    height:30px;
-    width:30px;
-
-
-   
+.quick-links {
+    padding-bottom: 15%;
+    color: white;
 }
 
-.instagram{
-    height: 30px;
-    width:30px;
-   
+.footer-links {
     
+    text-decoration: none;
+    color: gray;    
+    font-size: large
+    ;
 }
 
-.tiktok{
-    height: 30px;
-    width:30px;
+.footer-links:hover {
+    color: #DB3B25;
+    transition: color 0.2s ease;
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
-    font-family: "Domine";
 }
 
-.social-section ul{
+.social-section ul {
     display: flex;
-    padding-right: 10px; /* Aligns items to the start of the container */
-    gap: 10px; 
-    font-family: "Domine";
+    justify-content: center;
+    gap: 10px;
 }
 
 .footer-bottom {
     background-color: #95A3B3;
-    justify-content: center;
-    padding:0;
+    padding: 0;
     font-size: small;
-
-    
+    text-align: center;
 }
 
+.contents {
+    color: gray;
+    font-family: "Cabin";
+}
 
-.contents{
-    font-family: "Domine";
+.phone{
+    color:gray;
 }

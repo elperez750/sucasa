@@ -1,103 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
-.insta{
- 
-  width: 5%
-}
-.top-navbar {
-  background-color: #12213E !important;
-    padding: 0.5rem !important;  
-  
-  }
- 
-  
-  .my-link {
-    text-decoration: none;
-  }
-  
-  /* This ensures the link remains without an underline even when hovered */
-  .my-link:hover {
-    text-decoration: none;
-  }
 
-  
-  .bottom-navbar {
-  
-    background-color: rgba(255, 255, 255, 0.6) !important;  
-    width: 100% !important;
-    height:100px;
-  }
-
-  .nav-links {
-    font-family: 'Domine';
-   
-    font-weight: regular;
-    font-size: 20px;
-               
-    justify-content: flex-end; 
+.logo{
+  height: 100px;
 }
 
-.my-link{
-  font-family: 'Domine';
-  color: black;
-  justify-content: flex-end;
-  display: flex;  
-}
-
-  h3{
-    font-size: medium;
-    font-family: 'Domine';
-    color: white;
-   
-  }
-  
-  
-  .nav-links .dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.nav-links .dropdown-toggle::after {
+.navbar .dropdown-toggle::after {
   display: none;
 }
 
-.service-links{
-  font-size: large;
-  font-family: 'Domin';
-  
+
+.top-navbar{
+  background-color:#12213E;
+}
+
+.top-navbar h3{
+  font-family: "Cabin";
+  color:white;
+  font-size: medium;
+}
+
+.my-link{
+  font-size: 22px;
+  font-family: "Cabin";
+  color: black;
 }
 
 
-
-
-  .my-link:hover{
-    color: #DB3B25 !important;
-  }
-
-  
-  .my-link-social:hover{
-    color:#DB3B25 !important;
-
-  }
-  
-
-
-  .logo{
-    display: inline-block;
-    width: 100%;
-    height: 100px;
-    margin-right: 10px;  /* Increase/decrease as needed */
-    padding: 1px;        /* Increase/decrease as needed */
-    
-  }
-
-
-
-  .sticky-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
-   
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+  opacity: 0.8;
+  font-family: "Cabin";
 }
 
-/* Add any other existing styles for .top-navbar, .bottom-navbar, etc. below */
+@media (max-width: 768px) {
+  h3 {
+    font-size: small;
+    text-align: center;
+  }
+
+  .nav-links {
+    font-size: 18px;
+    font-family: "Cabin";
+  }
+
+  .logo {
+    height: 60px; /* Adjust logo size for mobile */
+  }
+  
+  .bottom-navbar {
+    padding: 0.5rem 0;  /* Reduce padding for mobile */
+  }
+
+ 
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 992px) {
+  h3 {
+    font-size: medium;
+  }
+
+  .nav-links {
+    font-size: 18px;
+  }
+  
+  .logo {
+    height: 80px; /* Adjust logo size for tablet */
+  }
+}
+
+

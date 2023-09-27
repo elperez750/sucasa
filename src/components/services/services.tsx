@@ -1,5 +1,3 @@
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './services.css';
 import image from '../../images/paintbrush.jpeg';
@@ -7,86 +5,85 @@ import interior_image from '../../images/interior.jpg';
 import exterior_image from '../../images/exterior.jpg';
 import commercial_image from '../../images/commercial.jpg';
 import pressure_image from '../../images/pressure_wash.jpeg';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Services() {
-  return (
-    <>
-    <div className='image-container'>
-        <img className="paintbrush" src={image} alt="paintbrush" />
-        <div className="service">Services</div>
-      </div>    
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
 
-    <div className='description'>
-    <p className="about-services">
-        SuCasa Paint and RoofCare has been the go-to choice for homeowners and businesses across the metropolitan area for over three decades. We operate with full licensing, bonding, and insurance, adhering to the highest standards set by our state. As a testament to our commitment, we are also proud to be recognized by the Roofing and Paint Professionals Association. Whether your need is a fresh coat of paint or comprehensive roof maintenance, our dedicated team brings the expertise and precision to ensure your property looks its best and stands the test of time.
-    </p>
-
-    <button type="button" className="btn btn-custom btn-lg service-button">Schedule a free estimate</button>
-
-
-
-   
-
-    </div>
-
-    <div className="interior-container">
-    <div className='interior-text'>
-            <h1>Interior Painting</h1>
-              <p>Interior painting is more than just applying color; it's about capturing a room's essence and mood. The right shade and finish can transform a space, making it a reflection of personal style. It's not just decor, but a canvas where life's stories unfold.</p>
-          </div>
-          
-            <img className="interior" src={interior_image} alt="interior" /> 
-            <button type="button" className="btn btn-custom btn-lg interior-button">Learn More</button>
-
-            
-        </div>
-
-        <div className="exterior-container">
-      <div className='exterior-text'>
-            <h1>Exterior Painting</h1>
-              
-              <p>Exterior painting is more than a visual upgrade; it's a shield against the elements. The right paint enriches a property's character, protects its integrity, and ensures it stands out in the neighborhood. It's not just about aesthetics, but ensuring longevity in the face of time and weather.</p>
+    return (
+        <>
+            <div className='image-container'>
+                <img className="img-fluid" src={image} alt="paintbrush" />
+                <div className="service">SERVICES</div>
             </div>
-          
-            <img className="exterior" src={exterior_image} alt="exterior" /> 
-            <button type="button" className="btn btn-custom btn-lg exterior-button">Learn More</button>
 
-            
-        </div>
-
-
-        <div className="commercial-container">
-      <div className='commercial-text'>
-            <h1>Commercial Painting</h1>
-              
-              <p>Commercial painting goes beyond aesthetics—it's about creating an environment that drives productivity and communicates professionalism. With the right hue and finish, businesses can leave a lasting impression on clients and foster a positive workspace for employees. It's where commerce meets craftsmanship.</p>
+            <div className='container-description'>
+                <p className="about-services">
+                Sucasa Paint and Roof has been a trusted name in Sultan, WA, and its surrounding areas for decades. We're a fully licensed, bonded, and insured business in Washington State, and we prioritize environmental safety as an EPA Lead-Safe Certified firm. Catering to both commercial and residential projects, whether it's roofing or painting, interior or exterior, our team's vast experience ensures delivery of an impeccable final product.
+                </p>
+                <div className="text-center">
+                    <button type="button" className="btn btn-custom btn-lg service-button">Schedule a free estimate</button>
+                </div>
             </div>
-          
-            <img className="commercial" src={commercial_image} alt="commercial" /> 
-            <button type="button" className="btn btn-custom btn-lg commercial-button">Learn More</button>
 
-            
-        </div>
-
-      <div className='pressure-container'>
-        <div className='pressure-text'>
-            <h1>Pressure Washing</h1>
-              
-              <p>Pressure washing rejuvenates your property by swiftly removing dirt, grime, and residues. Perfect for exteriors, driveways, and patios, our services deliver a refreshed and revitalized look in no time.</p>
+            <div data-aos="fade-left" className="container my-4">
+                <div className="row align-items-center">
+                    <div className="col-md-6">
+                        <h1>Interior Painting</h1>
+                        <p>Transform your indoor spaces with rich colors and professional finishes. Our interior painting services offer a seamless, efficient, and meticulous application, ensuring every room truly reflects your style.</p>
+                        <a href="/interior" className="btn btn-custom btn-lg">Learn More</a>
+                    </div>
+                    <div className="col-md-6">
+                        <img className="img-fluid" src={interior_image} alt="interior" />
+                    </div>
+                </div>
             </div>
-          
-            <img className="pressure" src={pressure_image} alt="pressure" /> 
-            <button type="button" className="btn btn-custom btn-lg pressure-button">Learn More</button>
 
-            
-        </div>
+            <div data-aos="fade-right" className="container my-4">
+                <div className="row align-items-center">
+                    <div className="col-md-6 order-md-2">
+                        <h1>Exterior Painting</h1>
+                        <p>Boost your home's curb appeal with a fresh coat of paint. Our exterior painting professionals ensure a clean, detailed appearance that not only protects but also beautifies your home's facade.</p>
+                        <a href="/exterior" className="btn btn-custom btn-lg">Learn More</a>
+                    </div>
+                    <div className="col-md-6 order-md-1">
+                        <img className="img-fluid" src={exterior_image} alt="exterior" />
+                    </div>
+                </div>
+            </div>
+
+            {/* Add similar rows for Commercial Painting and Pressure Washing */}
+            <div data-aos="fade-left" className="container my-4">
+                <div className="row align-items-center">
+                    <div className="col-md-6">
+                        <h1>Commercial Painting</h1>
+                        <p>Present your business in the best light with top-notch commercial painting. Whether it's an office, retail space, or industrial setting, our team delivers high-quality finishes that echo professionalism.</p>
+                        <a href="/commercial" className="btn btn-custom btn-lg">Learn More</a>
+                    </div>
+                    <div className="col-md-6">
+                        <img className="img-fluid" src={commercial_image} alt="commercial" />
+                    </div>
+                </div>
+            </div>
 
 
+            <div data-aos="fade-right" className="container my-4">
+                <div className="row align-items-center">
+                    <div className="col-md-6 order-md-2">
+                        <h1>Pressure</h1>
+                        <p>Revitalize and clean surfaces with our pressure washing services. Effectively remove dirt, grime, and mildew, restoring the beauty and extending the life of your property's exteriors.</p>
+                        <a href="/pressure" className="btn btn-custom btn-lg">Learn More</a>
+                    </div>
+                    <div className="col-md-6 order-md-1">
+                        <img className="img-fluid" src={pressure_image} alt="pressure" />
+                    </div>
+                </div>
+            </div>
 
-   
-    
-    </>
-    
-  )
+        </>
+    )
 }
-

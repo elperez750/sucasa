@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
  
 .house{
     width: 100%;
@@ -17,9 +17,10 @@
     background-color: #DB3B25; /* This adds a semi-transparent black background */
     color: white; 
     padding: 5px 0; /* This adds some padding at the top and bottom */
-    font-family: "Domine" !important;
+    font-family: "Cabin" !important;
     font-size: 25px;
     font-style: italic;
+    font-style: bold;
 }
 
 
@@ -45,12 +46,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -150%); /* center the text */
+    transform: translate(-50%, -250%); /* center the text */
     color: rgb(8, 3, 3);
-    font-family: "Domine" !important;
-    font-weight: bold;
+    font-family: "Cabin" !important;
+    font-weight: bolder;
     font-size: 50px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
 
 
@@ -70,12 +71,13 @@
     border-radius: 30px;
     background-color: #12213E;
     color: white;
-    font-family: 'Domine' !important;
+    font-family: 'Cabin' !important;
     left: 50%;
     transform: translateX(-50%); /* center the button horizontally */
     z-index: 1;
   }
 
+  
   .fire:hover {
     background-color: white;
     color: black !important;
@@ -87,7 +89,7 @@
   }
 
   .goal{
-    font-family: "Domine";
+    font-family: "Cabin";
     text-align: center;
     padding-bottom: 5%;
     font-weight: bold;
@@ -97,7 +99,7 @@
  
   .for-us{
     padding-bottom: 5%;
-    font-family: "Domine";
+    font-family: "Cabin";
     font-weight: lighter;
     padding-left: 10%;
     padding-right:10%;
@@ -133,7 +135,7 @@
     z-index: 2;
     color: black;
     font-size: 35px;
-    font-family: "Domine";
+    font-family: "Cabin";
    
     
   }
@@ -168,18 +170,40 @@
   
 
   .content-wrapper {
-    display: flex;
-    align-items:start;  /* Adjust based on your preference */
-  
     background-color: #12213E;
-    padding-bottom: 3%;
-    
+    display: flex;
+    justify-content: space-between; /* Horizontally space out direct children */
+    align-items: center; /* Vertically center the direct children */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    gap: 1rem; /* Set a gap between the items, adjust as needed */
 }
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .content-wrapper > div {
+      width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+
+.text-area, .image-section {
+  flex: 1; /* Each takes up half the width of the container */
+}
+
+.image-on-right {
+  max-width: 100%; /* Image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.btn-block {
+  max-width: 300px; /* Adjust as needed */
+  margin: 0 auto; /* Center the button if it's not full width */
+}
+
 
 .text-area {
   flex: 1;   /* Takes up 50% of the parent's width */
   padding-right: 20px;  /* Spacing between text and images */
-  font-family: "Domine";
+  font-family: "Cabin";
   display: flex;
   flex-direction: column;  /* Stack children vertically */
   align-items: center; 
@@ -205,18 +229,18 @@
   text-align: left;
   padding-left: 5%;
   font-size: 55px;
-  font-family: "Domine";
+  font-family: "Cabin";
   font-weight: bolder;
 }
 
 .location{
   padding-bottom: 5%;
   padding-left: 15%;
-  font-family: "Domine";
+  font-family: "Cabin";
 }
 
 .first-paragraph{
-  font-family: "Domine";
+  font-family: "Cabin";
   padding-bottom: 5%;
   font-size:large;
   padding-left: 15%;
@@ -224,7 +248,7 @@
 }
 
 .second-paragraph{
-  font-family: "Domine";
+  font-family: "Cabin";
   padding-bottom: 6%;
   font-size: large;
   padding-left: 15%;
@@ -238,7 +262,17 @@
   font-size: 30px !important;
   background-color: #DB3B25 !important;
   color: white !important;
-  font-family: "Domine";
+  font-family: "Cabin";
   
 }
 
+
+.blurred-img {
+  background-image: url('../../images/house-small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blurred-img img {
+  opacity: 0;
+}

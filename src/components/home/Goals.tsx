@@ -5,8 +5,19 @@ import image3 from '../../images/commercial.jpg';
 import image5 from '../../images/pressure_wash.jpeg';
 import image4 from '../../images/jesus.jpg';
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Goals() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000 // This value can be adjusted
+        });
+    }, []);
+
     return (
         <>
         <div className="content-wrapper">
@@ -24,7 +35,7 @@ function Goals() {
         </div>
 
         <section id="goal">
-            <div className='goal'>
+            <div className='goal' data-aos='zoom-in'>
             <h1 className="our-goal">Our Goal</h1>
             <h4 className="for-us">For us, making the client happy is our number one priority. We will work closely with you to figure out your needs and satisfy you. Others may overlook the smallest details, but we are dedicated to perfection and quality. We work hard all year and are glad to come help you with your project, rain or shine!</h4>
             <div className='image-container'>

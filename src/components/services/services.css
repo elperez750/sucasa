@@ -1,259 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Domine');
-
-
-.image-container {
-    position: relative; /* Set relative positioning for the container */
-    font-family: "Domine" !important;
-    width: 100%; /* If you want the image to take the full width of its parent */
+.interior, .exterior, .commercial, .pressure {
+  width: 100%; /* Image takes the full width on mobile */
+  max-width: 600px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center if container is wider than max-width */
+  font-family: "Cabin";
 }
 
-
-
-.paintbrush {
-    width: 100%; /* Image takes the full width of the container */
-    height:320px;
-}
-
-
-
-.service {
-    position: absolute; /* Absolutely position text inside the image container */
-    top: 50%; /* Start 50% down from the top */
-    left: 50%; /* Start 50% in from the left */
-    transform: translate(-50%, -50%); /* This offsets the text's position to center it */
-    color: white; /* Example color, adjust as necessary */
-    font-size: 24px; /* Adjust size if necessary */
-    font-weight: bolder;
-    text-align: center;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
-    font-family: "Domine" !important;
-    font-size: 45px;
+.container-description{
+  padding-bottom: 5%;
+  font-family: "Cabin";
+  display: block;
 }
 
 
 
 .about-services{
-    font-size:17px;
-    font-family: "Domine" !important;
-    padding-bottom: 10%;
+  font-size: 18px;
+  padding: 50px;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ensure container takes up full width */
+  overflow: hidden; /* Ensures anything outside the container bounds is hidden */
+  
+
+}
+
+.image-container img{
+  opacity: 0.6;
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: 300px; /* Initial height */
+  object-fit: cover; /* This will make sure your image covers the div without distortion */
+}
+
+.service {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 24px; 
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .img-fluid {
+      height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid {
+      height: 150px; /* Adjust height for very small screens */
+  }
 }
 
 
 
-.service-button {
-    border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
-    padding:16px;
-    position: absolute; 
-    border-radius: 10px;
-    background-color: #12213E !important;
-    transition: background-color 0.3s; /* Smooth transition effect */
-    color: white;
-    font-family: "Domine" !important;
-    left: 40%;
-    transform: translateY(-100%); 
-   
-  }
 
 
-
-  .service-button:hover{
-    background-color: white !important;
-    border: 2px solid #12213e;
-    
-  }
-
-  
-
-  .description{
-    padding: 5%;
-    
-  }
-
-  .interior-container{
-    display: flex;
-    padding-left: 2%;
-    padding-bottom: 4%;
-    padding-top: 10%;
-   
-  }
-
-  .interior-text{
-    font-size:15px;
-    font-family: "Domine" !important;
-    padding-left:10%;
-    padding-right:20%;
-  }
-  
-
-.interior{
-  height:auto;
-  width: 600px;
-  padding-right:4%;
-  
-  
-}
-
-.interior-button {
-  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
-  padding:16px;
-  position: absolute; 
-  border-radius: 10px;
-  background-color: #12213E !important;
-  transition: background-color 0.3s; /* Smooth transition effect */
+.btn-custom{
+  background-color: #12213E;
   color: white;
-  font-family: "Domine";
-  left: 20%;
-  transform: translateY(350%); 
  
-}
-
-
-
-.interior-button:hover{
-  background-color: white !important;
-  border: 2px solid #12213e;
-  
-}
-
-
-
-.exterior-container{
-  display: flex;
-  padding-left: 2%;
-  padding-bottom: 4%;
-  padding-top: 10%;
-}
-
-.exterior-text{
-  font-size:15px;
-  font-family: "Domine";
-  padding-left:10%;
-  padding-right:20%;
-}
-
-.exterior{
-  height:auto;
-  width: 600px;
-padding-right:4%;
-
-}
-
-.exterior-button {
-  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
-  padding:16px;
-  position: absolute; 
-  border-radius: 10px;
-  background-color: #12213E !important;
-  transition: background-color 0.3s; /* Smooth transition effect */
-  color: white;
-  font-family: "Domine" !important;
-  left: 20%;
-  transform: translateY(350%); 
-
-}
-
-
-
-.exterior-button:hover{
-  background-color: white !important;
-  border: 2px solid #12213e;
-}
-
-
-.commercial-container{
-  display: flex;
-  padding-left: 2%;
-  padding-bottom: 4%;
-  padding-top: 10%;
-  
-}
-
-.commercial-text{
-  font-size:15px;
-  font-family: "Domine";
-  padding-left:10%;
-  padding-right:20%
-
-  
-}
-
-
-.commercial{
-height:auto;
-width:600px;
-padding-right:4%;
-
-}
-
-.commercial-button {
-  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
-  padding:16px;
-  position: absolute; 
-  border-radius: 10px;
-  background-color: #12213E !important;
-  transition: background-color 0.3s; /* Smooth transition effect */
-  color: white;
-  font-family: "Domine";
-  left: 20%;
-  transform: translateY(450%); 
- 
-}
-
-
-
-.commercial-button:hover{
-  background-color: white !important;
-  border: 2px solid #12213e;
-  
-}
-
-
-
-.pressure-container{
-  display: flex;
-  padding-left: 2%;
-  padding-bottom: 4%;
-  padding-top: 10%;
-  
-}
-
-
-
-.pressure{
-height:auto;
-width: 600px;
-padding-right:4%;
-
-}
-
-.pressure-text{
-  font-size:15px;
-  font-family: "Domine";
-  padding-left:10%;
-  padding-right:20%;
-}
-
-.pressure-button {
-  border: 2px solid #12213e; /* This is the actual border color. Adjust as needed. */
-  padding:16px;
-  position: absolute; 
-  border-radius: 10px;
-  background-color: #12213E !important;
-  transition: background-color 0.3s; /* Smooth transition effect */
-  color: white;
-  font-family: "Domine";
-  left: 20%;
-  transform: translateY(350%); 
- 
-}
-
-
-
-.pressure-button:hover{
-  background-color: white !important;
-  border: 2px solid #12213e;
-  
 }

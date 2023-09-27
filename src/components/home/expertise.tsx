@@ -1,12 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './expertise-styles.css';
 import image from '../../images/paint.jpg';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Expertise() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000 // This value can be adjusted
+        });
+    }, []);
+
     return (
       <div className="background-container">
-         <div className='overlay-container'>
+         <div className='overlay-container' data-aos="fade-in">
          <h1 className='header'>Our Standards</h1>
                 
         <div className='grid-container'>
