@@ -9,7 +9,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 function Goals() {
 
     useEffect(() => {
@@ -20,64 +19,66 @@ function Goals() {
 
     return (
         <>
-        <div className="content-wrapper">
-            <div className="text-area">
-                <h1 className='Who'>Who we are</h1>
-                <h4 className='location'>Residential & Commercial Painting Company in Sultan, WA</h4>
-                <p className='first-paragraph'>Sucasa paint and roof is a bonded insured roofing and painting contractor in the State of Washington. Jesus Perez owner and the operator. He worked within the roofing and painting industry since 1999. Using his extensive knowledge and a vast range of experience. He works directly with his clients to ensure that each project is completed properly and in accordance with the initial estimate. Sucasa Paint and Roof can provide the service you need when you need it and at price you afford.</p>
-                <p className='second-paragraph'>We are committed to providing you with the best job possible for a reasonable price. We aren't happy until you are, and we'll work with you until you are satisfied. We hold ourselves to a high level, and we look to exceed that level everyday. With more than 20 years worth of experience, we bring excellence and quality to your home, and we hope to continue in the future.</p>
-                <button type="button" className="btn btn-custom btn-lg btn-block start">Get started</button>
-            </div>
-            <div className="image-section">
-                <img className="image-on-right" src={image4} alt="Description of Image 1" />
-               
-            </div>
-        </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <h1 className='Who'>Who we are</h1>
+                        <h4 className='location'>Residential & Commercial Painting Company in Sultan, WA</h4>
+                        <p className='first-paragraph'>Sucasa Paint and Roof stands as a premier, bonded, and insured roofing and painting contractor in the ever-evolving State of Washington. At the heart of this esteemed establishment is Jesus Perez, the diligent owner and hands-on operator. With an eye for detail and a dedication to maintaining the highest standards, Jesus ensures that every project undertaken by Sucasa Paint and Roof mirrors his personal ethos of quality, professionalism, and impeccable workmanship. His leadership goes beyond mere oversight; he's deeply involved in every phase, ensuring clients receive unparalleled service and results that stand the test of time. This level of commitment has not only earned Sucasa Paint and Roof a sterling reputation but has also cemented its place as one of the most sought-after contractors in the region.</p>
+                        <p className='second-paragraph'>Jesus is deeply committed to his craft. With over two decades of dedicated experience, he brings a wealth of knowledge and expertise to every project. His longstanding commitment to the field is evident in the quality of his work, ensuring excellence in all he undertakes.</p>
+                        <button type="button" className="btn btn-custom btn-lg btn-block start">Get started</button>
+                    </div>
+                    
 
-        <section id="goal">
-            <div className='goal' data-aos='zoom-in'>
-            <h1 className="our-goal">Our Goal</h1>
-            <h4 className="for-us">For us, making the client happy is our number one priority. We will work closely with you to figure out your needs and satisfy you. Others may overlook the smallest details, but we are dedicated to perfection and quality. We work hard all year and are glad to come help you with your project, rain or shine!</h4>
-            <div className='image-container'>
-                <div className='image-wrapper'>
-                <Link to="/interior">
-                <img className="interior" src={image1} alt="interior" /> 
-                <div className='hover-text'>Interior</div>
-                <div className="hover-overlay"></div>
-                </Link>
-             </div>
-
-             <div className='image-wrapper'>
-                <Link to="/exterior">
-                    <img className="exterior" src={image2} alt="exterior" /> 
-                
-                <div className='hover-text'>Exterior</div>
-                <div className="hover-overlay"></div>
-            </Link>
+                    <div className="col-md-6">
+                        <img className="image-on-right" src={image4} alt="Description of Image 1" />
+                    </div>
+                </div>
             </div>
-
-            <div className='image-wrapper'>
-                <Link to="commercial">
-                <img className="commercial" src={image3} alt="commercial" /> 
-                <div className='hover-text'>Commercial</div>
-                <div className="hover-overlay"></div>
-                </Link>
-            </div>
-            <div className='image-wrapper'>
-                <Link to="/pressure">
-                <img className="pressure" src={image5} alt="pressure" /> 
-                <div className='hover-text'>Pressure Wash</div>
-                <div className="hover-overlay"></div>
-                </Link>
-            </div>
-            </div> 
-            </div>
-
-        
            
+              
             
-        </section>
 
+            <section id="goal" data-aos='zoom-in'>
+                <h1 className="our-goal">Our Goal</h1>
+                <h4 className="for-us">For us, making the client happy is our number one priority...</h4>
+                <div className='container'>
+                    <div className="row justify-content-center">
+                        <div className='col-sm-6 col-md-3 image-wrapper'>
+                            <Link to="/interior">
+                                <img className="interior" src={image1} alt="interior" />
+                                <div className='hover-text'>Interior</div>
+                                <div className="hover-overlay"></div>
+                            </Link>
+                        </div>
+
+                        <div className='col-sm-6 col-md-3 image-wrapper'>
+                            <Link to="/exterior">
+                                <img className="exterior" src={image2} alt="exterior" />
+                                <div className='hover-text'>Exterior</div>
+                                <div className="hover-overlay"></div>
+                            </Link>
+                        </div>
+
+                        <div className='col-sm-6 col-md-3 image-wrapper'>
+                            <Link to="commercial">
+                                <img className="commercial" src={image3} alt="commercial" />
+                                <div className='hover-text'>Commercial</div>
+                                <div className="hover-overlay"></div>
+                            </Link>
+                        </div>
+
+                        <div className='col-sm-6 col-md-3 image-wrapper'>
+                            <Link to="/pressure">
+                                <img className="pressure" src={image5} alt="pressure" />
+                                <div className='hover-text'>Pressure Wash</div>
+                                <div className="hover-overlay"></div>
+                            </Link>
+                        </div>
+                        <button type="button" className="btn btn-custom btn-lg btn-block explore">Schedule a free estimate</button>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

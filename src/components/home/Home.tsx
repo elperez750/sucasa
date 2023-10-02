@@ -33,8 +33,9 @@ export default function Home() {
      
         <img className="house" src={image} alt="house" />
     
-        <h1 className="button-estimate">PRECISION IN EVERY STROKE</h1>
-        <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate</button>
+        <h1 className="button-estimate">guarantee greatness</h1>
+        <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate &raquo;</button>
+        
         <div className="spanish">
             Se habla español!
         </div>

@@ -1,17 +1,20 @@
- @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
-
+* {
+    box-sizing: border-box;
+}
 
 .background-container {
-    display: flex;          
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: space-between; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     width: 100%;
-    height: 800px;
+    min-height: 800px;
     color: white;
     font-family: "Cabin";
+    padding-top:5%;
 }
 
 .background-container::before {
@@ -24,6 +27,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+    padding-top:5%;
 }
 
 .text-section {
@@ -31,35 +35,36 @@
     color: black !important;
     font-weight: light;
     font-family: "Cabin" !important;
+    word-wrap: break-word;
 }
 
-
-.small-header{
+.small-header {
     font-weight: lighter !important;
     font-size: 40px;
     font-family: "Cabin" !important;
 }
 
-
-
 .paragraph {
     color: white;
     font-weight: lighter;
+    word-wrap: break-word;
+}
+
+
+.services{
+    align-items: center;
 }
 
 .header {
-    align-self: center;    /* Override the align-items from parent */
+    align-self: center;
     font-size: 80px;
     color: white;
     font-weight: regular !important;
-    margin-top: 50px;      /* Give it some space from the top */
+    margin-top: 50px;
     font-family: "Cabin" !important;
 }
 
-
-
 .overlay-container {
- 
     top: 0;
     left: 0;
     width: 100%;
@@ -71,20 +76,29 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-
-
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
-    width: 80%;            
+    width: 80%;
+    padding-bottom: 10%;
 }
 
+.why-us {
+    font-family: "Cabin";
+    background-color: rgba(3, 169, 244, 0.04);
+    width: 100%;
+    padding-bottom: 10%;
+}
 
+.why-us h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 .explore {
     align-self: center;
-    margin-bottom: 50px;  
+    margin-bottom: 50px;
     padding: 10px 20px;
     background-color: #DB3B25;
     color: white;
@@ -92,10 +106,21 @@
     border-radius: 5px;
     font-size: 23px;
     font-weight: bolder;
+    transition: opacity 0.3s ease;
 }
 
 .explore:hover {
     background-color: #DB3B25;
     color: white;
-    opacity: 1;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 40px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }

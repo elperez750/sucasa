@@ -1,11 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cabin');
  
+
+@media only screen and (max-width: 768px) {
+  .btn {
+      display: block;      /* Make the button a block element */
+      width: 100%;         /* Stretch across the full width of its parent */
+      box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+}
+
+
 .house{
     width: 100%;
-    height: 700px;
-    opacity: 0.5;
+    height: auto;
+    opacity: 0.8;
     padding-bottom: 100px;
+    filter: brightness(50%);
 }
 
 
@@ -41,20 +52,24 @@
   
 
  
-
+ 
   .button-estimate{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -250%); /* center the text */
-    color: rgb(8, 3, 3);
+    transform: translate(-50%, -100%); /* center the text */
+    color: white;
     font-family: "Cabin" !important;
     font-weight: bolder;
     font-size: 50px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
 
 
+  
   .text {
     color: white;
     font-size: 24px;
@@ -86,6 +101,7 @@
   .our-goal{
     font-weight: bolder;
     padding-top: 7%;
+    align-items: center;
   }
 
   .goal{
@@ -116,6 +132,8 @@
     position: relative;
     width: 300px;
     height: 200px;
+    align-content: center;
+   
   }
   
   .image-wrapper img {
@@ -124,6 +142,13 @@
     object-fit: cover;
     transition: opacity 0.3s;
     opacity: 0.3;
+    
+  }
+
+
+
+  .explore{
+    margin-top: 10%;
   }
 
   
@@ -150,10 +175,12 @@
     color:white !important;
     opacity: 0;
     transition: opacity 0.3s;
+   
   }
   
   .image-wrapper:hover img {
     opacity: 0.55;
+    
    
   }
   
@@ -165,6 +192,7 @@
   
   .image-wrapper:hover .hover-overlay {
     opacity: 1;
+
   
   }
   
@@ -176,6 +204,7 @@
     align-items: center; /* Vertically center the direct children */
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
     gap: 1rem; /* Set a gap between the items, adjust as needed */
+   
 }
 
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
@@ -197,6 +226,11 @@
 .btn-block {
   max-width: 300px; /* Adjust as needed */
   margin: 0 auto; /* Center the button if it's not full width */
+  
+}
+
+.container{
+  display: block;
 }
 
 
@@ -224,10 +258,9 @@
 
 
 .Who{
-  padding-top: 10%;
-  padding-bottom: 5%;
-  text-align: left;
-  padding-left: 5%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
   font-size: 55px;
   font-family: "Cabin";
   font-weight: bolder;
@@ -235,44 +268,45 @@
 
 .location{
   padding-bottom: 5%;
-  padding-left: 15%;
+  padding-left: 5%;
+  padding-right: 10%;
   font-family: "Cabin";
 }
 
 .first-paragraph{
   font-family: "Cabin";
+  padding-right: 10%;
   padding-bottom: 5%;
   font-size:large;
-  padding-left: 15%;
+  padding-left: 5%;
   font-weight: lighter !important;
 }
 
+
+.row{
+  text-align: center;
+}
 .second-paragraph{
   font-family: "Cabin";
   padding-bottom: 6%;
+  padding-right: 10%;
   font-size: large;
-  padding-left: 15%;
-  
+  padding-left: 5%;
   opacity:1;
 }
 
 .start{
+  display: block;
   justify-content: center;
   border-radius: 5px;
   font-size: 30px !important;
   background-color: #DB3B25 !important;
   color: white !important;
   font-family: "Cabin";
+  text-align: center;
+  align-items: center;
+  
   
 }
 
 
-.blurred-img {
-  background-image: url('../../images/house-small.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.blurred-img img {
-  opacity: 0;
-}
