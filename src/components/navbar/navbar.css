@@ -1,29 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 
 .logo{
   height: 100px;
 }
 
+.my-link-social:hover{
+  color: #DB3B25;
+}
+
 .navbar .dropdown-toggle::after {
   display: none;
 }
 
+.service-links{
+  font-family: "Quicksand";
+}
 
 .top-navbar{
   background-color:#12213E;
 }
 
 .top-navbar h3{
-  font-family: "Cabin";
+  font-family: "Quicksand";
   color:white;
   font-size: medium;
 }
 
 .my-link{
   font-size: 22px;
-  font-family: "Cabin";
+  font-family: "Quicksand";
   color: black;
+}
+
+.my-link:hover{
+  color:#DB3B25;
 }
 
 
@@ -32,7 +43,7 @@
   top: 0;
   z-index: 100; 
   opacity: 0.8;
-  font-family: "Cabin";
+  font-family: "Quicksand";
 }
 
 @media (max-width: 768px) {
@@ -43,7 +54,7 @@
 
   .nav-links {
     font-size: 18px;
-    font-family: "Cabin";
+    font-family: "Quicksand";
   }
 
   .logo {

@@ -1,38 +1,34 @@
 
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
  
 
 @media only screen and (max-width: 768px) {
   .btn {
-      display: block;      /* Make the button a block element */
-      width: 100%;         /* Stretch across the full width of its parent */
+         
       box-sizing: border-box; /* Ensure padding and border are included in the width */
   }
+
+ 
+}
+
+.goals-container{
+  margin-top:5%;
+}
+
+.who-we-are-container{
+  margin-top: 10%;
 }
 
 
 .house{
     width: 100%;
-    height: auto;
+    height: 30%;
     opacity: 0.8;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
     filter: brightness(50%);
 }
 
 
-.spanish{
-  position: absolute; /* This will position the text over your image */
-    bottom: 0px; /* This positions the div at the bottom of the image */
-    width: 100%; /* This will ensure the div spans the full width of its container */
-    text-align: center; /* This will center the text */
-    background-color: #DB3B25; /* This adds a semi-transparent black background */
-    color: white; 
-    padding: 5px 0; /* This adds some padding at the top and bottom */
-    font-family: "Cabin" !important;
-    font-size: 25px;
-    font-style: italic;
-    font-style: bold;
-}
 
 
 .img-text {
@@ -59,7 +55,7 @@
     left: 50%;
     transform: translate(-50%, -100%); /* center the text */
     color: white;
-    font-family: "Cabin" !important;
+    font-family: "Quicksand" !important;
     font-weight: bolder;
     font-size: 50px;
     word-spacing: 10px;
@@ -68,7 +64,18 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
 
-
+.other-caption{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;
+  font-family: "Quicksand" !important;
+  font-weight: bolder;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
   
   .text {
     color: white;
@@ -80,42 +87,47 @@
 
   .fire {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -150%);
-    border-radius: 30px;
-    background-color: #12213E;
-    color: white;
-    font-family: 'Cabin' !important;
+    transform: translate(-50%, -200%);
+    border-radius: 0px;
+    background-color:  #12213E;
+    color:white;
+    font-family: 'Quicksand' !important;
     left: 50%;
     transform: translateX(-50%); /* center the button horizontally */
-    z-index: 1;
+  
   }
 
   
   .fire:hover {
     background-color: white;
     color: black !important;
+    border: #12213E solid 1px;
   }
   
   .our-goal{
     font-weight: bolder;
     padding-top: 7%;
     align-items: center;
+    font-family: "Quicksand";
+    color:#12213E;
+    
+   
   }
 
   .goal{
-    font-family: "Cabin";
+    font-family: "Quicksand";
     text-align: center;
-    padding-bottom: 5%;
+    margin-bottom: 0%;
     font-weight: bold;
     font-size: large;
   }
 
  
   .for-us{
-    padding-bottom: 5%;
-    font-family: "Cabin";
+    margin-bottom: 3%;
+    font-family: "Quicksand";
     font-weight: lighter;
     padding-left: 10%;
     padding-right:10%;
@@ -148,10 +160,25 @@
 
 
   .explore{
-    margin-top: 10%;
+    font-family: "Quicksand";
+    display: block;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #E25141;
+    color: white ;
+    font-family: "Quicksand";
+    text-align: center;
+    align-items: center;
+   
   }
 
-  
+ 
+
+  .explore-div{
+    margin-top:5%;
+    margin-bottom:5%;
+  }
+
   .hover-text {
     position: absolute;
     top: 50%;
@@ -160,7 +187,7 @@
     z-index: 2;
     color: black;
     font-size: 35px;
-    font-family: "Cabin";
+    font-family: "Quicksand";
    
     
   }
@@ -219,13 +246,16 @@
 }
 
 .image-on-right {
-  max-width: 100%; /* Image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
+
+  max-width: 100%; 
+  height: auto; 
+  margin-top: 0%;
 }
 
 .btn-block {
-  max-width: 300px; /* Adjust as needed */
-  margin: 0 auto; /* Center the button if it's not full width */
+  max-width: 300px; 
+  margin: 0 auto; 
+  border-radius: 0;
   
 }
 
@@ -237,7 +267,7 @@
 .text-area {
   flex: 1;   /* Takes up 50% of the parent's width */
   padding-right: 20px;  /* Spacing between text and images */
-  font-family: "Cabin";
+  font-family: "Quicksand";
   display: flex;
   flex-direction: column;  /* Stack children vertically */
   align-items: center; 
@@ -245,6 +275,7 @@
   font-weight: 100;
    
 }
+
 
 .image-section {
   flex: 1;  /* Takes up 50% of the parent's width */
@@ -258,23 +289,25 @@
 
 
 .Who{
+  color: #12213E;
   text-align: center;
+  margin-bottom: 2%;
   margin-top: 10%;
-  margin-bottom: 10%;
   font-size: 55px;
-  font-family: "Cabin";
+  font-family: "Quicksand";
   font-weight: bolder;
 }
 
 .location{
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 10%;
-  font-family: "Cabin";
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom:5%;
+
+  font-family: "Quicksand";
 }
 
 .first-paragraph{
-  font-family: "Cabin";
+  font-family: "Quicksand";
   padding-right: 10%;
   padding-bottom: 5%;
   font-size:large;
@@ -286,8 +319,9 @@
 .row{
   text-align: center;
 }
+
 .second-paragraph{
-  font-family: "Cabin";
+  font-family: "Quicksand";
   padding-bottom: 6%;
   padding-right: 10%;
   font-size: large;
@@ -298,15 +332,22 @@
 .start{
   display: block;
   justify-content: center;
-  border-radius: 5px;
-  font-size: 30px !important;
-  background-color: #DB3B25 !important;
-  color: white !important;
-  font-family: "Cabin";
+  font-size: 25px !important;
+  background-color: #E25141;
+  color: white ;
+  font-family: "Quicksand";
   text-align: center;
   align-items: center;
   
-  
+}
+.explore:hover {
+  background-color: #E25141; 
+  color: white;
 }
 
 
+.start:hover{
+ 
+  border: #E25141 solid 1px;
+  color:#E25141;
+}

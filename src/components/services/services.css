@@ -1,28 +1,132 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 
 .interior, .exterior, .commercial, .pressure {
-  width: 100%; /* Image takes the full width on mobile */
-  max-width: 600px; /* Maximum width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center if container is wider than max-width */
-  font-family: "Cabin";
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+  
+  font-family: "Quicksand";
 }
+
+
+
+.steps{
+  font-family: "Quicksand";
+}
+
+
 
 .container-description{
   padding-bottom: 5%;
-  font-family: "Cabin";
+  font-family: "Quicksand";
   display: block;
-text-align: center;
+  text-align: center;
 }
 
+
+
+.services-container{
+  overflow: hidden;
+  font-family: "Quicksand";
+}
+
+.roller{
+  display: block; 
+  margin: 0 auto; 
+  width:50px;
+  height:50px;
+}
+
+.heart-house{
+  display: block; 
+  margin: 0 auto; 
+  width:50px;
+  height:50px;
+}
 
 
 .about-services{
   font-size: 18px;
   padding: 50px;
-  font-family: "Cabin";
+  font-family: "Quicksand";
 }
+
+.icon-bubble {
+  position: absolute;
+ 
+  transform: translate(70%, -50%);
+ 
+  width: 180px;
+  height: 90px; 
+  background-color: white;
+  border-top-left-radius: 90px; 
+  border-top-right-radius: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  font-family:"Quicksand";
+}
+
+.steps{
+  margin-top: 10%;
+}
+
+.icon-bubble span {
+  margin-top: 10%;
+}
+
+.swatch{
+  display: block; 
+  margin: 0 auto; 
+  width:50px;
+  height:50px;
+}
+
+.step-descriptions{
+  margin-top:20%;
+}
+
+
+.steps-button{
+  margin-top:10%;
+  margin-bottom:10%;
+}
+
+
+.steps-image .fluid{
+  position: relative;
+  height: 50%;
+  width: 100%;
+
+}
+
+.steps-image{
+  font-family: "Quicksand";
+}
+
+.my-4{
+  overflow: hidden !important;
+}
+
+.service-button{
+  color: white;
+  background-color: #E25141;
+}
+
+
+
+
+.service-button:hover{
+  border:black 1px solid;
+  color: black;
+  background-color: white;
+
+}
+
 
 body {
   overflow-x: hidden;
@@ -31,59 +135,51 @@ body {
 
 .image-container {
   position: relative;
-  width: 100%; /* Ensure container takes up full width */
-  overflow: hidden; /* Ensures anything outside the container bounds is hidden */
  
-
 }
 
 .image-container img{
-  opacity: 0.6;
+  filter: brightness(60%);
+  
+  width: 100%;
+  height: 300px;
+
+
 }
 
-.img-fluid {
-  display: block;
-  width: 100%;
-  height: 300px; /* Initial height */
-  object-fit: cover; /* This will make sure your image covers the div without distortion */
-}
+
 
 .service {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow: hidden;
   transform: translate(-50%, -50%); 
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 60px;
+  font-family: "Quicksand";
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-  .img-fluid {
-      height: 200px; /* Adjust height for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .img-fluid {
-      height: 150px; /* Adjust height for very small screens */
-  }
+.service-image img{
+  height:50%;
+  width: 100%;
+  
 }
 
 
 
-
-
-.btn-custom{
-  background-color: #12213E;
-  color: white;
+  
  
-}
 
-.btn-custom:hover{
-  border: #12213E solid 1px;
-}
+
+
+
+
+
+
+
+
 

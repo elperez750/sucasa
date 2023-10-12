@@ -3,6 +3,20 @@ import './expertise-styles.css';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import image from '../../images/whyusone.jpeg';
+import image2 from '../../images/seattle.jpeg';
+import image3 from '../../images/family.png';
+import project1 from '../../images/project-1.jpg';
+import project2 from '../../images/project-2.jpeg';
+import project3 from '../../images/project-3.jpeg';
+import project4 from '../../images/project-4.jpeg';
+import project5 from '../../images/project-5.jpeg';
+import project6 from '../../images/project-6.jpeg';
+import project7 from '../../images/project-7.jpeg';
+import project8 from '../../images/project-8.jpeg';
+
+
+
 
 function Expertise() {
     useEffect(() => {
@@ -13,48 +27,126 @@ function Expertise() {
 
     return (
         <>
-            <div className="background-container">
-                <div className='overlay-container' data-aos="fade-in">
-                    <h1 className='header'>Our Standards</h1>
-                    <div className='grid-container row'>
-                        <div className="col-md-12 col-sm-6 text-section" id="text1">
-                            <h1 className='small-header'>Trustworthiness</h1>
-                            <p className='paragraph'>Trust is earned, not given. We pride ourselves on building long-term relationships with our clients, one project at a time. Every contract is a pledge of our integrity and reliability.</p>
-                        </div>
-                        <div className="col-md-12 col-sm-6 text-section" id="text2">
-                            <h1 className='small-header'>Professionalism</h1>
-                            <p className='paragraph'>Each member of our team is trained to exhibit the highest levels of professionalism, both in the execution of their tasks and in their interactions with clients. When you hire us, you're not just getting a painter; you're getting a partner dedicated to beautifying your space.</p>
-                        </div>
-                        <div className="col-md-12 col-sm-6 text-section" id="text3">
-                            <h1 className='small-header'>Personal Touch</h1>
-                            <p className='paragraph'>Every home, every office, every space tells a story. We pride ourselves on understanding these stories and adding our personal touch, making every painted space truly unique.</p>
-                        </div>
-                        <div className="col-md-12 col-sm-6 text-section" id="text4">
-                            <h1 className='small-header'>End-to-End Service</h1>
-                            <p className='paragraph'>Our relationship with our clients goes beyond just painting. From consultation to after-care, we offer end-to-end services ensuring a seamless and memorable experience.</p>
+
+            <div className="why-us">
+                <h2 className="text-center mb-4">Why Choose Us?</h2>
+                <div className='container'>
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="image-container-home">
+                            <img className="why-us-image" src={image} alt="why-us-image"></img>
+                            <div className="overlay-content-whyus">
+                                <h3 className="header-why-us">Experertise</h3>
+                                <h2 className='bold'>Unparalleled Precision in Every Project</h2>
+                                <div className="more-text">
+                                    <p className='white'>At Sucasa Paint and Roofcare, every home we touch becomes a testament to our excellence. Our expertise isn't just in applying paint or fixing roofs; it's about understanding each space and elevating it beyond expectations. Our blend of artistry and technical know-how ensures that with Sucasa, every project isn't just a job; it's a crafted masterpiece.</p>
+                                <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
+
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    <button className="btn btn-custom btn-lg btn-block explore">Dive Into Our Services</button>
+                    <div className="col-lg-4">
+                        <div className="image-container-home">
+                            <img className="why-us-image" src={image2} alt="why-us-image"></img>
+                            <div className="overlay-content-whyus">
+                                <h3 className="header-why-us">Experience</h3>
+                                 <h2 className='bold'>Serving Seattle-Area Homeowners Since 2001</h2>
+                                <div className="more-text">
+                                    <p className='white'>With over two decades in the business, Sucasa Paint and Roof stands as one of Seattle's most seasoned painting firms. With 22 years of expertise under our belt, we possess an unparalleled understanding of painting solutions tailored for Seattle's unique climate. Trust in us for results that not only enhance aesthetic appeal but also offer enduring protection.</p>
+                                <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className='image-container-home'>
+                            <img className="why-us-image" src={image3} alt="why-us-image"></img>
+                            <div className="overlay-content-whyus">
+                                <h3 className="header-why-us">Dedication</h3>
+                                <h2 className='bold'>From Concept to Completion: Your Vision, Our Mission</h2>
+                                <div className="more-text">
+                                    <p className='white'>At Sucasa Paint and Roofcare, our unwavering commitment goes beyond just paint and tiles. Every brushstroke and every shingle reflects years of honed craftsmanship, ensuring that our clients receive nothing but the best. Our team's dedication has been steadfast since our inception, continually setting the gold standard in Seattle's painting and roofing scene. When you choose Sucasa, you're not just getting a service; you're investing in a legacy of excellence.</p>
+                                    <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
-            <div className="why-us container-fluid">
-                <h2 className="text-center mb-4">Why Choose Us?</h2>
-                <div className="row">
-                    <div className="col-md-4 order-md-1 order-3">
-                        <h3>Reason 1</h3>
-                        <p>Explanation for reason 1. Elaborate on the benefits and why it's important.</p>
-                    </div>
-                    <div className="col-md-4 order-md-2 order-2">
-                        <h3>Reason 2</h3>
-                        <p>Explanation for reason 2. Elaborate on the benefits and why it's important.</p>
-                    </div>
-                    <div className="col-md-4 order-md-3 order-1">
-                        <h3>Reason 3</h3>
-                        <p>Explanation for reason 3. Elaborate on the benefits and why it's important.</p>
+
+            <div className="quote-container">
+            <div className='container quote'>
+                <div className='row'>
+            <div className='col-lg-6'>
+            <h1>Get a quote today!</h1>
+            </div>
+            <div className='col-lg-6'>
+            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            </div>
+            </div>
+            </div>
+            
+
+        </div>
+
+
+        <div className='projects-container'>
+            <h1 className="text-center mb-4">Projects</h1>
+                <div className='container project-image'>
+                    <div className="row">
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project1} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project2} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project3} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project4} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project5} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project6} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project7} alt="project-image"></img>
+                        </div>
+                        <div className="col-lg-3 col-md-12">
+                            <img className="fluid" src={project8} alt="project-image"></img>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                </div>
+
+
+                <div>
+                <div className='container local-container'>
+                    <div className="row">
+                        
+                        <div className="col-lg-6 col-md-12 local-text">
+                            <h1 className='local-text'>Design Pioneers</h1>
+                            <h4 className="local-text-below">Selecting a Local Design Maestro Can Elevate Your Experience</h4>
+                            <p>In the dynamic world of design, the expertise of a local maestro can make a world of difference. Design pioneers, deeply rooted in the community, understand the nuances and preferences of their clientele, enabling them to create designs that resonate deeply. Their proximity offers an unparalleled advantage in communication, understanding, and tailoring solutions to unique requirements. When you opt for a local design expert, you're not just choosing a professional; you're selecting a partner who's deeply invested in bringing your vision to life, one who understands the local aesthetic and integrates it seamlessly with global trends. Elevate your design journey by aligning with those who know your community best.</p>
+                            <button type="button" className="btn btn-custom btn-lg local-button">Schedule a free estimate </button>
+
+                        </div>
+                        <div className="col-lg-6 col-md-12">
+                            <img className="fluid" src={project1} alt="project-image"></img>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+          
         </>
     );
 }

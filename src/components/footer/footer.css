@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 footer {
     
     padding: 20px 0;
-    font-family: "Cabin";
+    font-family: "Quicksand";
 }
 
 .footer-description {
-    padding-top: 10%;
+    margin-top: 5%;
     color: gray;
     font-size: large;
 }
@@ -17,7 +17,7 @@ footer {
     max-width: 50%;
     height: auto;
     margin: 0 auto;
-    padding: 2%;
+    
 }
 
 .about, .follow-us, .quick-links {
@@ -30,7 +30,7 @@ footer {
 }
 
 .quick-links {
-    padding-bottom: 15%;
+    margin-bottom: 0%;
     color: white;
 }
 
@@ -67,7 +67,7 @@ footer {
 
 .contents {
     color: gray;
-    font-family: "Cabin";
+    font-family: "Quicksand";
 }
 
 .phone{

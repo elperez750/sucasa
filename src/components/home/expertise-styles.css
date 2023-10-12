@@ -1,20 +1,102 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 * {
     box-sizing: border-box;
 }
 
+/* General Styles */
+.white {
+    color: white;
+}
+
+.project-image .fluid{
+    width:100%;
+    height:80%;
+  }
+  
+  .local-button {
+    border-radius: 0px;
+    background-color:  #12213E;
+    color:white;
+    font-family: 'Quicksand' !important;
+    left: 50%;
+    margin-top:2%;
+  
+  }
+
+  
+ .local-button:hover {
+    border-radius: 0px;
+    background-color:  #12213E;
+    color:white;
+    font-family: 'Quicksand' !important;
+    left: 50%;
+ }
+
+
+.local-text{
+    text-align: left;
+    align-items: left;
+    font-family: "Quicksand";
+}
+
+.local-text-below{
+    margin-top:5%;
+    margin-bottom: 5%;
+    color:#E25141
+}
+
+  .local-container .fluid{
+    width:100%;
+  }
+
+  .local-container{
+    margin-top:10%;
+    margin-bottom: 10%;
+  }
+  .quote-button{
+    background-color: #E25141;
+    color: white;
+  }
+  
+  .quote-button:hover{
+    background-color: aliceblue;
+    color: #12213E;
+  }
+  
+  
+  .quote-container{
+    background-color: #12213E;
+    color: white;
+    margin-top: 5%;
+  }
+  
+  
+  .quote{
+    padding-top:3%;
+    padding-bottom:3%;
+    font-family: "Quicksand";
+  }
+  .projects-container{
+    margin-top:5%;
+    font-family: "Quicksand";
+  }
+
+  
+.bold {
+    font-weight: 700;
+}
+
+/* Background Styles */
 .background-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; 
     position: relative;
     width: 100%;
-    min-height: 800px;
     color: white;
-    font-family: "Cabin";
-    padding-top:5%;
+    font-family: "Quicksand";
 }
 
 .background-container::before {
@@ -27,95 +109,140 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    padding-top:5%;
 }
 
-.text-section {
-    padding: 20px;
-    color: black !important;
-    font-weight: light;
-    font-family: "Cabin" !important;
-    word-wrap: break-word;
-}
-
-.small-header {
-    font-weight: lighter !important;
-    font-size: 40px;
-    font-family: "Cabin" !important;
-}
-
-.paragraph {
-    color: white;
-    font-weight: lighter;
-    word-wrap: break-word;
-}
-
-
-.services{
-    align-items: center;
-}
-
-.header {
-    align-self: center;
-    font-size: 80px;
-    color: white;
-    font-weight: regular !important;
-    margin-top: 50px;
-    font-family: "Cabin" !important;
-}
-
+/* Overlay Styles */
 .overlay-container {
-    top: 0;
-    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 50px;
+    text-align: center;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    width: 80%;
-    padding-bottom: 10%;
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #12213E;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Header Styles */
+.header {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+
+
+/* Image Styles */
+.image-container-home {
+    position: relative;
+    height:100%;
+}
+
+.image-container-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.why-us-image {
+    width: 100%;
+    display: block;
+    z-index: 1;
+    height:100%;
+    filter: brightness(50%);
+    transition: filter 0.5s;
+}
+
+.image-container-home:hover .why-us-image {
+    filter: brightness(0%);
+    
+ 
+}
+
+.overlay-content-whyus:hover{
+    color:#E25141; 
+}
+
+
+
+.overlay-content-whyus {
+    position: absolute;  
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 1;
+    z-index: 2;  
+    color:white;
+    font-family: "Quicksand";
+    font-weight: bolder;
+    text-align: left;  /* Centers the text horizontally */
+    display: flex;  /* The next three lines center the text vertically */
+  
+    flex-direction: column; 
+
+}
+
+.text-center{
+    color:#12213E;;
+    font-weight: bolder;
+}
+
+
+.header-why-us{
+    margin-bottom: 5%;
+}
+.more-text {
+    margin-top:20%;
+    opacity: 0;  /* The text starts as invisible */
+    transform: translateY(20px); /* The text starts 20px below its original position */
+    transition: transform 0.5s, opacity 0.5s; /* Adding transition for transform and opacity properties */
+    text-align: center;
+}
+
+
+.image-container-home:hover .overlay-content-whyus .more-text {
+    opacity: 1;  /* The text becomes visible on hover */
+    transform: translateY(0);  /* The text moves to its original position on hover */
+   
+}
+
+
+.small-header, .paragraph {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.paragraph {
+    color: black;
+    word-wrap: break-word;
+    font-size: 20px;
 }
 
 .why-us {
-    font-family: "Cabin";
-    background-color: rgba(3, 169, 244, 0.04);
-    width: 100%;
-    padding-bottom: 10%;
+    margin-top: 5%;
+    font-family: "Quicksand";
 }
 
-.why-us h2 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.explore {
-    align-self: center;
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    background-color: #DB3B25;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 23px;
-    font-weight: bolder;
-    transition: opacity 0.3s ease;
-}
-
-.explore:hover {
-    background-color: #DB3B25;
-    color: white;
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 992px) {
     .header {
         font-size: 40px;
     }

@@ -32,13 +32,14 @@ export default function Home() {
       <div className="img-text">
      
         <img className="house" src={image} alt="house" />
-    
+      <div className='container-fluid'>
         <h1 className="button-estimate">guarantee greatness</h1>
-        <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate &raquo;</button>
+        <h2 className="other-caption">Serving the Seattle area since 2001</h2>
+      </div>
+        <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate </button>
+
         
-        <div className="spanish">
-            Se habla español!
-        </div>
+       
     
     
       
