@@ -41,7 +41,7 @@ function Goals() {
 
             <section id="goal" data-aos='zoom-in'>
                 <h1 className="our-goal">Our Goal</h1>
-                <h4 className="for-us">At SuCasa Paint and Roof, making the client happy isn’t a target; it’s a promise. We understand the significance of the walls that shelter you and the roof that guards against the elements. It's more than just paint and shingles; it's your home, your sanctuary.</h4>
+                <h4 className="for-us">At Sucasa Paint and Roof, making the client happy isn’t a target; it’s a promise. We understand the significance of the walls that shelter you and the roof that guards against the elements. It's more than just paint and shingles; it's your home, your sanctuary.</h4>
                 <div className='container goals-containers'>
                     <div className="row justify-content-center">
                         <div className='col-lg-6 col-md-3 image-wrapper'>
