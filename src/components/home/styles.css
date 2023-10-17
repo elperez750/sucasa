@@ -33,7 +33,7 @@
 
 .img-text {
   position: relative;
-  width: 100%; /* you can set to your desired width */
+  width: 100%; /* Fyou can set to your desired width */
   height: 600px;
   
   }
@@ -75,6 +75,7 @@
   font-size: 15px;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top:auto;
 }
   
   .text {
@@ -134,12 +135,7 @@
     font-size: medium;
   }
 
-  .image-container {
-    display: flex;
-    justify-content: center; 
-    gap: 20px;
-  }
-  
+
   .image-wrapper {
     position: relative;
     width: 300px;
@@ -204,6 +200,20 @@
     transition: opacity 0.3s;
    
   }
+
+  .parallax-home{
+    
+
+    min-height: 700px;
+    
+    filter: brightness(70%);
+
+    background-image: url('../../images/house.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
   .image-wrapper:hover img {
     opacity: 0.55;
@@ -230,7 +240,7 @@
     justify-content: space-between; /* Horizontally space out direct children */
     align-items: center; /* Vertically center the direct children */
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    gap: 1rem; /* Set a gap between the items, adjust as needed */
+    gap: 1rem; 
    
 }
 

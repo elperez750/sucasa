@@ -1,0 +1,28 @@
+.other-caption-exterior{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    color: white;
+    font-family: "Quicksand" !important;
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top:auto;
+  }
+
+@media (max-width: 576px) {
+    .interior-banner {
+        font-size: 24px; /* adjust the size as per your design */
+    }
+}
+
+/* Media Query for medium screens */
+@media (max-width: 768px) {
+    .interior-banner {
+        font-size: 36px; /* adjust the size as per your design */
+    }
+}
+
+

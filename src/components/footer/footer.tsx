@@ -19,7 +19,7 @@ function Footer() {
                         <h4 className='quick-links'>Quick Links</h4>
                         <hr className='solid'></hr>
                         <ul className="list-unstyled">
-                            <li><a className='footer-links' href="/interior">Interior</a></li>
+                            <li><a className='footer-links' href="/Interior">Interior</a></li>
                             <li><a className='footer-links' href="/Exterior">Exterior</a></li>
                             <li><a className='footer-links' href="/Commercial">Commercial</a></li>
                             <li><a className='footer-links' href="/Pressure">Pressure Washing</a></li>

@@ -81,10 +81,10 @@ title={
   onMouseLeave={() => setIsOpen(false)}
 >
 
-                  <NavDropdown.Item className='service-links' as={Link} to="/interior">Interior Painting</NavDropdown.Item>
-                  <NavDropdown.Item className='service-links' as={Link} to="/exterior">Exterior Painting</NavDropdown.Item>
-                  <NavDropdown.Item className='service-links' as={Link} to="/commercial">Commercial Painting</NavDropdown.Item>
-                  <NavDropdown.Item className='service-links' as={Link} to="/pressure">Pressure Washing</NavDropdown.Item>
+                  <NavDropdown.Item className='service-links' as={Link} to="/Interior">Interior Painting</NavDropdown.Item>
+                  <NavDropdown.Item className='service-links' as={Link} to="/Exterior">Exterior Painting</NavDropdown.Item>
+                  <NavDropdown.Item className='service-links' as={Link} to="/Commercial">Commercial Painting</NavDropdown.Item>
+                  <NavDropdown.Item className='service-links' as={Link} to="/Pressure">Pressure Washing</NavDropdown.Item>
 
               </NavDropdown>
               <Nav.Link href="/projects" className="my-link">Projects</Nav.Link>

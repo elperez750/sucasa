@@ -39,7 +39,7 @@ function Expertise() {
                                 <h3 className="header-why-us">Experertise</h3>
                                 <h2 className='bold'>Unparalleled Precision in Every Project</h2>
                                 <div className="more-text">
-                                    <p className='white'>At Sucasa Paint and Roofcare, every home we touch becomes a testament to our excellence. Our expertise isn't just in applying paint or fixing roofs; it's about understanding each space and elevating it beyond expectations. Our blend of artistry and technical know-how ensures that with Sucasa, every project isn't just a job; it's a crafted masterpiece.</p>
+                                    <p className='white'>At Sucasa Paint and Roofcare, every home we touch becomes a testament to our excellence. Our expertise isn't just in applying paint or fixing roofs; it's about understanding each space and elevating it beyond expectations.</p>
                                 <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
 
                             </div>
@@ -53,7 +53,7 @@ function Expertise() {
                                 <h3 className="header-why-us">Experience</h3>
                                  <h2 className='bold'>Serving Seattle-Area Homeowners Since 2001</h2>
                                 <div className="more-text">
-                                    <p className='white'>With over two decades in the business, Sucasa Paint and Roof stands as one of Seattle's most seasoned painting firms. With 22 years of expertise under our belt, we possess an unparalleled understanding of painting solutions tailored for Seattle's unique climate. Trust in us for results that not only enhance aesthetic appeal but also offer enduring protection.</p>
+                                    <p className='white'>With over two decades in the business, Sucasa Paint and Roof stands as one of Seattle's most seasoned painting firms. </p>
                                 <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
                             </div>
                             </div>
@@ -66,7 +66,7 @@ function Expertise() {
                                 <h3 className="header-why-us">Dedication</h3>
                                 <h2 className='bold'>From Concept to Completion: Your Vision, Our Mission</h2>
                                 <div className="more-text">
-                                    <p className='white'>At Sucasa Paint and Roofcare, our unwavering commitment goes beyond just paint and tiles. Every brushstroke and every shingle reflects years of honed craftsmanship, ensuring that our clients receive nothing but the best. Our team's dedication has been steadfast since our inception, continually setting the gold standard in Seattle's painting and roofing scene. When you choose Sucasa, you're not just getting a service; you're investing in a legacy of excellence.</p>
+                                    <p className='white'>At Sucasa Paint and Roofcare, our unwavering commitment goes beyond just paint and tiles. Every brushstroke and every shingle reflects years of honed craftsmanship. ensuring that our clients receive nothing but the best. </p>
                                     <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
                             </div>
                             </div>
@@ -95,8 +95,8 @@ function Expertise() {
 
         <div className='projects-container'>
             <h1 className="text-center mb-4">Projects</h1>
-                <div className='container project-image'>
-                    <div className="row">
+                <div className='container'>
+                    <div className="row project-image">
                         <div className="col-lg-3 col-md-12">
                             <img className="fluid" src={project1} alt="project-image"></img>
                         </div>

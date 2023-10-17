@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Source+Sans+3:wght@500&display=swap');
+
 
 * {
     box-sizing: border-box;
 }
 
-/* General Styles */
-.white {
-    color: white;
-}
+
 
 .project-image .fluid{
     width:100%;
@@ -68,7 +67,7 @@
   .quote-container{
     background-color: #12213E;
     color: white;
-    margin-top: 5%;
+    margin-top:5%;
   }
   
   
@@ -165,21 +164,18 @@
 .why-us-image {
     width: 100%;
     display: block;
-    z-index: 1;
+    
     height:100%;
-    filter: brightness(50%);
+    filter: brightness(40%);
     transition: filter 0.5s;
 }
 
 .image-container-home:hover .why-us-image {
-    filter: brightness(0%);
+    filter: brightness(80%);
     
  
 }
 
-.overlay-content-whyus:hover{
-    color:#E25141; 
-}
 
 
 
@@ -188,16 +184,15 @@
     top: 0; 
     left: 0;
     right: 0;
-    bottom: 1;
-    z-index: 2;  
-    color:white;
+    bottom: 1; 
+    color:#E25141;
     font-family: "Quicksand";
-    font-weight: bolder;
-    text-align: left;  /* Centers the text horizontally */
-    display: flex;  /* The next three lines center the text vertically */
-  
+    font-weight: bold;
+    font-style: italic;
+    text-align: left; 
+    display: flex;  
     flex-direction: column; 
-
+    
 }
 
 .text-center{
@@ -208,20 +203,43 @@
 
 .header-why-us{
     margin-bottom: 5%;
+    color:white;
 }
+
+
+
 .more-text {
-    margin-top:20%;
     opacity: 0;  /* The text starts as invisible */
     transform: translateY(20px); /* The text starts 20px below its original position */
     transition: transform 0.5s, opacity 0.5s; /* Adding transition for transform and opacity properties */
     text-align: center;
+    font-size: 20px;
+    margin-top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; 
+    text-align: left; 
+    color:white;
+}
+
+.image-container-home{
+    position: relative;
 }
 
 
+.bold{
+    color:white;
+}
+
 .image-container-home:hover .overlay-content-whyus .more-text {
-    opacity: 1;  /* The text becomes visible on hover */
-    transform: translateY(0);  /* The text moves to its original position on hover */
-   
+    opacity: 1; 
+    transform: translateY(0);  
+    left:0;
+    right:0;
+    bottom:0;
+    height:auto;
+    font-weight: bold;
 }
 
 
@@ -236,9 +254,22 @@
     font-size: 20px;
 }
 
+
 .why-us {
     margin-top: 5%;
+    margin-bottom: 5%;
     font-family: "Quicksand";
+}
+
+.fluid{
+    transition-duration: 0.5s; /* Increase time for a slower transition */
+    transition-timing-function:linear;
+}
+
+.fluid:hover{
+    
+    opacity: 0.6;
+ 
 }
 
 /* Media Queries */

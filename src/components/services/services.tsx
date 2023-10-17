@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './services.css';
-import image from '../../images/paintbrush.jpeg';
 import interior_image from '../../images/interior.jpg';
 import exterior_image from '../../images/exterior.jpg';
 import commercial_image from '../../images/commercial.jpg';
@@ -25,9 +24,31 @@ export default function Services() {
     return (
         <>
             <div className='image-container'>
-                <img className="img-fluid"  src={image} alt="paintbrush" />
+                <div className="parallax-services">
+
+                </div>
+                
                 <div className="service">SERVICES</div>
+                <h2 className='other-caption-services'>THE RIGHT COMPANY FOR ALL YOUR PAINTING WORK</h2>
             </div>
+
+             
+<div className="quote-container-interior">
+            <div className='container quote'>
+                <div className='row'>
+            <div className='col-lg-6'>
+            <h1>Get a quote today!</h1>
+            </div>
+            <div className='col-lg-6'>
+            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            </div>
+            </div>
+            </div>
+            
+
+        </div>
+
+
 
 
 
@@ -59,13 +80,15 @@ export default function Services() {
             <div data-aos="fade-right" className="container my-4">
                 <div className="row align-items-center">
                     <div className="col-md-6 services-container">
-                        <h1>Exterior Painting</h1>
+                    <img className="img-fluid" src={exterior_image} alt="exterior" />
+                    </div>
+                    <div className="col-md-6 service-image">
+                    <h1>Exterior Painting</h1>
                         <hr className='solid'></hr>
                         <p>Boost your home's curb appeal with a fresh coat of paint. Our exterior painting professionals ensure a clean, detailed appearance that not only protects but also beautifies your home's facade.</p>
                         <a href="/exterior" className="btn btn-custom btn-lg service-button">Learn More</a>
-                    </div>
-                    <div className="col-md-6 service-image">
-                        <img className="img-fluid" src={exterior_image} alt="exterior" />
+
+                        
                     </div>
                 </div>
             </div>
@@ -90,13 +113,16 @@ x
             <div data-aos="fade-right" className="container my-4">
                 <div className="row align-items-center">
                     <div className="col-md-6 services-container">
-                        <h1>Pressure</h1>
+                    <img className="img-fluid" src={pressure_image} alt="pressure" />
+                    </div>
+                    <div className="col-md-6 order-md-1 service-image">
+                        
+                    <h1>Pressure</h1>
                         <hr className='solid'></hr>
                         <p>Revitalize and clean surfaces with our pressure washing services. Effectively remove dirt, grime, and mildew, restoring the beauty and extending the life of your property's exteriors.</p>
                         <a href="/pressure" className="btn btn-custom btn-lg service-button">Learn More</a>
-                    </div>
-                    <div className="col-md-6 order-md-1 service-image">
-                        <img className="img-fluid" src={pressure_image} alt="pressure" />
+
+                       
                     </div>
                 </div>
             </div>
