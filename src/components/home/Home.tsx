@@ -10,22 +10,6 @@ import React, { useEffect, useRef } from 'react';
 
 
 
-const Navigation: React.FC = () => {
-    const navigate = useNavigate();
-  
-    const navigateHome = () => {
-      navigate('/about');
-    };
-  
-    return (
-      <button type="button" className="btn btn-success btn-lg" onClick={navigateHome}>About</button>
-    );
-  }
-  
-
-
-
-
 export default function Home() {
   return (
     <>

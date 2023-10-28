@@ -5,6 +5,9 @@
   height: 100px;
 }
 
+.bottom-navbar{
+  height:100px;
+}
 .my-link-social:hover{
   color: #DB3B25;
 }

@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import image from '../../images/whyusone.jpeg';
 import image2 from '../../images/seattle.jpeg';
-import image3 from '../../images/family.png';
+import image3 from '../../images/family.jpeg';
 import project1 from '../../images/project-1.jpg';
 import project2 from '../../images/project-2.jpeg';
 import project3 from '../../images/project-3.jpeg';

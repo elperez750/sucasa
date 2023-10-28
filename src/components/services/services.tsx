@@ -128,7 +128,7 @@ x
             </div>
 
 
-            <section data-aos="fade-down" className='goals-container'>
+            <section className='goals-container'>
                 <h1 className="steps">A seamless experience from start to finish</h1>
                 <div className='container '>
                     <div className="row justify-content-center">

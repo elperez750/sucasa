@@ -3,7 +3,7 @@ import image from '../../images/interior-page.jpeg';
 import image2 from '../../images/interior.jpg';
 import imageone from '../../images/whyusone.jpeg';
 import imagetwo from '../../images/seattle.jpeg';
-import imagethree from '../../images/family.png';
+import imagethree from '../../images/family.jpeg';
 import imagefour from '../../images/bathroom.jpeg';
 import imagefive from '../../images/cabinet.jpg';
 import imagesix from '../../images/kitchen.jpeg';
@@ -38,7 +38,7 @@ export default function interior() {
   
   </div>
   <div className="service">Interior</div>
-  <h2 className='other-caption-exterior '><span>Explore a world where comfort meets impeccable taste.</span></h2>
+  <h2 className='other-caption-interior '><span>Explore a world where comfort meets impeccable taste.</span></h2>
 
 </div>
 
@@ -192,6 +192,13 @@ export default function interior() {
         <h1>Suppliers and brands we trust</h1>
       </div>
 
+
+      <div className="container interior-secondary">
+        <div className="row">
+
+        </div>
+      </div>
+
       <Marquee className='marquee-container'>{images.concat(images).map((imageSrc, index) => ( // Concatenating the images array to itself to double the images
                     <img 
                         key={index} 
@@ -200,6 +207,32 @@ export default function interior() {
                     />
                 ))}
               </Marquee>
+
+              <div className="background-container">
+                <div className='overlay-container' data-aos="fade-in">
+                    <h1 className='header'>Our Standards</h1>
+                    <div className='row'>
+                        <div className="col-lg-6 col-md-12 text-section" id="text1">
+                            <h1 className='small-header'>Trustworthiness</h1>
+                            <p className='paragraph'>Trust is earned, not given. We pride ourselves on building long-term relationships with our clients, one project at a time. Every contract is a pledge of our integrity and reliability.</p>
+                        </div>
+                        
+                        <div className="col-lg-6 col-md-12 text-section" id="text2">
+                            <h1 className='small-header'>Professionalism</h1>
+                            <p className='paragraph'>Each member of our team is trained to exhibit the highest levels of professionalism, both in the execution of their tasks and in their interactions with clients. When you hire us, you're not just getting a painter; you're getting a partner dedicated to beautifying your space.</p>
+                        </div>
+                        <div className="col-lg-6 col-md-12 text-section" id="text3">
+                            <h1 className='small-header'>Personal Touch</h1>
+                            <p className='paragraph'>Every home, every office, every space tells a story. We pride ourselves on understanding these stories and adding our personal touch, making every painted space truly unique.</p>
+                        </div>
+                        <div className="col-lg-6 col-md-12 text-section" id="text4">
+                            <h1 className='small-header'>End-to-End Service</h1>
+                            <p className='paragraph'>Our relationship with our clients goes beyond just painting. From consultation to after-care, we offer end-to-end services ensuring a seamless and memorable experience.</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
 
       
       

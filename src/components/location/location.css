@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Source+Sans+3:wght@500&display=swap');
+
+
+
+body{
+    font-family: "quicksand";
+
+}
+.location-text{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+
+}
+
+
+
+.main-header{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+.image-circles{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height:200px;
+    border-radius: 70%;
+    margin-bottom:10%;
+}
+
+.parallax-locations{
+    background-image: url('../../images/rainer.jpeg');
+  
+
+    filter: brightness(50%);
+    width:100%;
+    height:30%;
+    min-height: 700px;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

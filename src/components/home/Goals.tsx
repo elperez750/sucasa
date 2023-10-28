@@ -13,9 +13,9 @@ function Goals() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000 // This value can be adjusted
+            duration: 1000 
         });
-    }, []);
+    });
 
     return (
         <>

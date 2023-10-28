@@ -132,6 +132,10 @@ body {
   overflow-x: hidden;
 }
 
+.background-container{
+  margin-bottom:5%;
+}
+
 
 .image-container {
   position: relative;
@@ -191,6 +195,10 @@ body {
   height:50%;
   width: 100%;
   
+}
+
+.service-image{
+  font-family: "Quicksand";
 }
 
 
