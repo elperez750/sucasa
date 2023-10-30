@@ -62,8 +62,9 @@ export default function commercial() {
 
         <div className="container mt-4 commercial-main">
       <div className='row align-items-stretch'>
-      <div className='col-lg-6'>
-        <img className="commercial-right" src={image2} alt="commercial" />
+      <div className='col-lg-6 position-relative'>
+        <img className="interior-right" src={image2} alt="commercial" />
+        <div className="square"></div>
         </div>
         <div className='col-lg-6'>
           <div className="text-section-commercial">

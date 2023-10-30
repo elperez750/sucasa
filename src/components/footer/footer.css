@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face {
+    font-family: "General Sans";
+    src: url('../../GeneralSans_Complete/Fonts/Variable/GeneralSans-Variable.ttf') format('woff2');
+  }
+  
 
 footer {
     
     padding: 20px 0;
-    font-family: "Quicksand";
+    font-family: "General Sans";
 }
 
 .footer-description {
@@ -67,7 +71,7 @@ footer {
 
 .contents {
     color: gray;
-    font-family: "Quicksand";
+    font-family: "General Sans";
 }
 
 .phone{

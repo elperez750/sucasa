@@ -62,8 +62,10 @@ export default function exterior() {
 
         <div className="container mt-4 exterior-main">
       <div className='row align-items-stretch'>
-      <div className='col-lg-6'>
+      <div className='col-lg-6 position-relative'>
         <img className="interior-right" src={image2} alt="interior" />
+        <div className="square"></div>
+
         </div>
         <div className='col-lg-6'>
           <div className="text-section-exterior">

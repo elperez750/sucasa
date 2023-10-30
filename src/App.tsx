@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ScrollToTop from './scrollToTop';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
@@ -17,6 +18,7 @@ import Pressure from './components/pressure/pressure';
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />

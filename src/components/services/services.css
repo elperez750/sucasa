@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face {
+  font-family: "General Sans";
+  src: url('../../GeneralSans_Complete/Fonts/Variable/GeneralSans-Variable.ttf') format('woff2');
+}
+
 
 
 .interior, .exterior, .commercial, .pressure {
@@ -6,20 +10,20 @@
   max-width: 600px; 
   height: auto; 
   
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 
 
 .steps{
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 
 
 .container-description{
   padding-bottom: 5%;
-  font-family: "Quicksand";
+  font-family: "General Sans";
   display: block;
   text-align: center;
 }
@@ -28,7 +32,7 @@
 
 .services-container{
   overflow: hidden;
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 .roller{
@@ -49,7 +53,7 @@
 .about-services{
   font-size: 18px;
   padding: 50px;
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 .icon-bubble {
@@ -68,7 +72,7 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  font-family:"Quicksand";
+  font-family:"General Sans";
 }
 
 .steps{
@@ -105,7 +109,7 @@
 }
 
 .steps-image{
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 .my-4{
@@ -150,6 +154,91 @@ body {
 
 }
 
+.gray{
+  background-color: rgb(243, 243, 243);
+  padding:100px;
+  
+}
+
+.back-one::before {
+  content: "";
+  position: absolute;
+ 
+  width: 100%;  /* or whatever size you want for the square */
+  height: 100%;
+  transform: translate(-45%, -20%); /* centering the square */
+  overflow: hidden;
+  background-color: #12213E;  /* or any color you like */
+  z-index: -1; /* ensures it's behind content */
+}
+
+
+.back-two::before {
+  content: "";
+  position: absolute;
+  
+  overflow: hidden;
+  
+  width: 100%;  /* or whatever size you want for the square */
+  height: 100%;
+  transform: translate(-45%, -20%); /* centering the square */
+
+  background-color: #12213E;  /* or any color you like */
+  z-index: -1; /* ensures it's behind content */
+}
+
+
+.values-that-drive-work{
+  margin-bottom: 5%;
+}
+
+.back-one, .back-two {
+  position: relative;
+}
+
+
+.the-values{
+
+  padding-top:100px;
+  background-color: white;
+}
+
+
+.the-values h1{
+  text-align: left;
+
+}
+
+.the-values h4{
+  color:#12213E;
+}
+
+.box{
+  padding:100px;
+  font-weight: bolder;
+  z-index:1;
+}
+
+.square-two{
+ 
+  width: 100px; 
+  height: 100px;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E25141; 
+  margin-bottom:10%;
+}
+
+
+
+
+.icons{
+  max-width: 70%; /* Scales the icon to fit the container */
+  height: auto; /* Maintains aspect ratio */
+ 
+}
 .parallax-services{
   min-height: 700px;
     
@@ -168,7 +257,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); /* center the text */
   color: white;
-  font-family: "Quicksand" !important;
+  font-family: "General Sans" !important;
   font-weight: bolder;
   font-size: 15px;
   text-transform: uppercase;
@@ -188,7 +277,7 @@ body {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 60px;
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 .service-image img{
@@ -198,7 +287,7 @@ body {
 }
 
 .service-image{
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 

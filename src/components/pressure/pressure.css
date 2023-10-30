@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "General Sans";
+    src: url('../../GeneralSans_Complete/Fonts/Variable/GeneralSans-Variable.ttf') format('woff2');
+  }
+  
 
 
 .pressure-banner{
@@ -11,7 +16,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 60px;
-    font-family: "Quicksand";
+    font-family: "General Sans";
 }
 
 .quote-container-pressure{
@@ -31,7 +36,7 @@
 }
 
 .pressure-main{
-    font-family: "Quicksand";
+    font-family: "General Sans";
     margin-bottom: 10%;
  
 }
@@ -42,7 +47,7 @@
 }
 
 .pressure-services{
-    font-family: "Quicksand";
+    font-family: "General Sans";
     color: black;
 }
 
@@ -77,7 +82,7 @@
 .suppliers{
     margin-top:5%;
     margin-bottom: 5%;
-    font-family: "Quicksand";
+    font-family: "General Sans";
     font-weight: bold;
 }
 
@@ -88,7 +93,7 @@
     left: 50%;
     transform: translate(-50%, -50%); /* center the text */
     color: white;
-    font-family: "Quicksand" !important;
+    font-family: "General Sans" !important;
     font-weight: bolder;
     font-size: 15px;
     text-transform: uppercase;

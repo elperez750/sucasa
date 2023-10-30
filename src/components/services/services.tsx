@@ -10,6 +10,11 @@ import roller_image from '../../images/roller.png';
 import heart_house from '../../images/heart-house.png';
 import paint_roller from '../../images/paint-roller.jpeg';
 import happy_image from '../../images/happy.jpeg';
+import quality from "../../images/quality.png";
+import idea from "../../images/idea.png";
+import team_work from "../../images/team-work.png";
+import commitement from "../../images/commitement.png";
+import leadership from "../../images/leadership.png";
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -179,29 +184,50 @@ x
             </section>
             
 
-            <div className="background-container">
-                <div className='overlay-container' data-aos="fade-in">
-                    <h1 className='header'>Our Standards</h1>
-                    <div className='row'>
-                        <div className="col-lg-6 col-md-12 text-section" id="text1">
-                            <h1 className='small-header'>Trustworthiness</h1>
-                            <p className='paragraph'>Trust is earned, not given. We pride ourselves on building long-term relationships with our clients, one project at a time. Every contract is a pledge of our integrity and reliability.</p>
+            <div className="values-that-drive-work">
+                <div className="container">
+                    <div className="row values">
+                        <div className="col-lg-4 the-values text-start">
+                            <h4>Our values</h4>
+                            <h1>The values that drive our work</h1>
+                        </div>
+                        <div className="col-lg-4 gray back-one">
+                          
+                            <div className="square-two">
+                            <img className="icons" src={quality} alt="hellos"></img>
+                            
+                            </div>
+                            <h3>Quality</h3>
+                        </div>
+                        <div className="col-lg-4 box">
+                        <div className="square-two">
+                            <img className="icons" src={idea} alt="hellos"></img>
+                            </div>
+                            <h3>Inovation</h3>
+                        </div>
+                        <div className="col-lg-4 gray">
+                        <div className="square-two">
+                            <img className="icons" src={team_work} alt="hellos"></img>
+                            </div>
+                            <h3>Team Work</h3>
+                        </div>
+                        <div className="col-lg-4 box">
+                        <div className="square-two">
+                            <img className="icons" src={commitement} alt="hellos"></img>
+                            </div>
+                            <h3>Commitement</h3>
+                        </div>
+                        <div className="col-lg-4 gray back-two">
+                        <div className="square-two">
+                            <img className="icons" src={leadership} alt="hellos"></img>
+                            </div>
+                            <h3>Leadership</h3>
+                         
+
+                        </div>
+                            
                         </div>
                         
-                        <div className="col-lg-6 col-md-12 text-section" id="text2">
-                            <h1 className='small-header'>Professionalism</h1>
-                            <p className='paragraph'>Each member of our team is trained to exhibit the highest levels of professionalism, both in the execution of their tasks and in their interactions with clients. When you hire us, you're not just getting a painter; you're getting a partner dedicated to beautifying your space.</p>
-                        </div>
-                        <div className="col-lg-6 col-md-12 text-section" id="text3">
-                            <h1 className='small-header'>Personal Touch</h1>
-                            <p className='paragraph'>Every home, every office, every space tells a story. We pride ourselves on understanding these stories and adding our personal touch, making every painted space truly unique.</p>
-                        </div>
-                        <div className="col-lg-6 col-md-12 text-section" id="text4">
-                            <h1 className='small-header'>End-to-End Service</h1>
-                            <p className='paragraph'>Our relationship with our clients goes beyond just painting. From consultation to after-care, we offer end-to-end services ensuring a seamless and memorable experience.</p>
-                        </div>
-                    </div>
-                
                 </div>
             </div>
 

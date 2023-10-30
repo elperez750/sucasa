@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face {
+  font-family: "General Sans";
+  src: url('../../ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf') format('woff2');
+}
 
 
 .logo{
@@ -17,7 +20,7 @@
 }
 
 .service-links{
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 .top-navbar{
@@ -25,14 +28,14 @@
 }
 
 .top-navbar h3{
-  font-family: "Quicksand";
+  font-family: "General Sans";
   color:white;
   font-size: medium;
 }
 
 .my-link{
   font-size: 22px;
-  font-family: "Quicksand";
+  font-family: "General Sans";
   color: black;
 }
 
@@ -46,7 +49,7 @@
   top: 0;
   z-index: 100; 
   opacity: 0.8;
-  font-family: "Quicksand";
+  font-family: "General Sans";
 }
 
 @media (max-width: 768px) {
@@ -57,7 +60,7 @@
 
   .nav-links {
     font-size: 18px;
-    font-family: "Quicksand";
+    font-family: "General Sans";
   }
 
   .logo {

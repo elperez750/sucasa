@@ -39,12 +39,12 @@ function Goals() {
               
             
 
-            <section id="goal" data-aos='zoom-in'>
+            <section>
                 <h1 className="our-goal">Our Goal</h1>
                 <h4 className="for-us">At Sucasa Paint and Roof, making the client happy isn’t a target; it’s a promise. We understand the significance of the walls that shelter you and the roof that guards against the elements. It's more than just paint and shingles; it's your home, your sanctuary.</h4>
                 <div className='container goals-containers'>
                     <div className="row justify-content-center">
-                        <div className='col-lg-6 col-md-3 image-wrapper'>
+                        <div className='col-lg-6 image-wrapper'>
                             <Link to="/interior">
                                 <img className="interior" src={image1} alt="interior" />
                                 <div className='hover-text'>Interior</div>
@@ -52,7 +52,7 @@ function Goals() {
                             </Link>
                         </div>
 
-                        <div className='col-lg-6 col-md-3 image-wrapper'>
+                        <div className='col-lg-6 image-wrapper'>
                             <Link to="/exterior">
                                 <img className="exterior" src={image2} alt="exterior" />
                                 <div className='hover-text'>Exterior</div>
@@ -60,7 +60,7 @@ function Goals() {
                             </Link>
                         </div>
 
-                        <div className='col-lg-6 col-md-3 image-wrapper'>
+                        <div className='col-lg-6 image-wrapper'>
                             <Link to="commercial">
                                 <img className="commercial" src={image3} alt="commercial" />
                                 <div className='hover-text'>Commercial</div>
@@ -68,7 +68,7 @@ function Goals() {
                             </Link>
                         </div>
 
-                        <div className='col-lg-6 col-md-3 image-wrapper'>
+                        <div className='col-lg-6 image-wrapper'>
                             <Link to="/pressure">
                                 <img className="pressure" src={image5} alt="pressure" />
                                 <div className='hover-text'>Pressure Wash</div>

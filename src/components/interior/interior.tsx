@@ -70,7 +70,8 @@ export default function interior() {
 
     <div className="container mt-4 interior-main">
       <div className='row align-items-stretch'>
-      <div className='col-lg-6'>
+      <div className='col-lg-6 position-relative'>
+        <div className="square"></div>
         <img className="interior-right" src={image2} alt="interior" />
         </div>
         <div className='col-lg-6'>
@@ -199,7 +200,7 @@ export default function interior() {
         </div>
       </div>
 
-      <Marquee className='marquee-container'>{images.concat(images).map((imageSrc, index) => ( // Concatenating the images array to itself to double the images
+      <Marquee className='marquee-container'>{images.concat(images).map((imageSrc, index) => ( 
                     <img 
                         key={index} 
                         src={imageSrc} 
