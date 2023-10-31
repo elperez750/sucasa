@@ -1,6 +1,3 @@
-import React, { useEffect, useState } from "react";
-
-
 const data = {
     title: "Common Interior Painting Questions",
     rows: [
@@ -35,7 +32,6 @@ const styles = {
 const config = {
     animate: true,
     arrowIcon: "V",
-    openOnload: 0,
     expandIcon: "+",
     collapseIcon: "-",
 };
