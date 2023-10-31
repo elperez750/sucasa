@@ -4,6 +4,10 @@
   }
   
 
+.values-that-drive-work{
+    margin-bottom:1%;
+}
+
 
 .pressure-banner{
     position: absolute;
@@ -33,6 +37,34 @@
     background-color: white;
     border: #E25141 1px solid;
     color:#E25141;
+}
+
+.container-faq{
+    
+    width:80%;
+    margin: 0 auto;
+    margin-top:10%;
+    margin-bottom: 10%;
+
+}
+
+
+
+.pressure-services-image{
+    width: 100%;
+    height:80%;
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom:5%;
+    margin-top:5%;
+
+}
+
+
+.pressure-services-image:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
 }
 
 .pressure-main{
