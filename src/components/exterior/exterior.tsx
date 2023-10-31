@@ -115,49 +115,10 @@ export default function exterior() {
                 ))}
               </Marquee>
 
-     
-            <div className="container exterior-services">
-              <div className='row'>
-                <div className='col-lg-12'>
-                  <h1>Services offered</h1>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagefour} alt="exterior-services" />
-                  <h2>Fence Staining and Painting</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagefive} alt="exterior-services" />
-                  <h2>Exterior Door Painting</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagesix} alt="exterior-services" />
-                  <h2>Brick Painting</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imageseven} alt="exterior-services" />
-                  <h2>Deck Staining</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imageeight} alt="exterior-services" />
-                  <h2>Siding Painting</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagenine} alt="exterior-services" />
-                  <h2>Garage Painting</h2>
-                </div>
-                
-                <div className='justify-content-center'>
-                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
-                </div>
-              </div>
-              </div>
-
-      
 
 
 
-
-            <div className="values-that-drive-work">
+              <div className="values-that-drive-work">
                 <div className="container">
                     <div className="row values">
                         <div className="col-lg-4 the-values text-start">
@@ -203,6 +164,43 @@ export default function exterior() {
                         
                 </div>
             </div>
+
+     
+            <div className="container exterior-services">
+              <div className='row'>
+                <div className='col-lg-12'>
+                  <h1>Services offered</h1>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagefour} alt="exterior-services" />
+                  <h2>Fence Staining and Painting</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagefive} alt="exterior-services" />
+                  <h2>Exterior Door Painting</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagesix} alt="exterior-services" />
+                  <h2>Brick Painting</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imageseven} alt="exterior-services" />
+                  <h2>Deck Staining</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imageeight} alt="exterior-services" />
+                  <h2>Siding Painting</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagenine} alt="exterior-services" />
+                  <h2>Garage Painting</h2>
+                </div>
+                
+                <div className='justify-content-center'>
+                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
+                </div>
+              </div>
+              </div>
 
 
       <div className="container-faq">
