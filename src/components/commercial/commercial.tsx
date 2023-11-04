@@ -1,26 +1,14 @@
-import React from 'react'
-import image from '../../images/exterior-image.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import image2 from '../../images/commercial-building.jpeg';
-import imageone from '../../images/whyusone.jpeg';
-import imagetwo from '../../images/seattle.jpeg';
-import imagethree from '../../images/family.jpeg';
 import imagefour from '../../images/restaurant.jpeg';
 import imagefive from '../../images/office.jpeg';
 import imagesix from '../../images/building.jpeg';
-import imageseven from '../../images/deck.jpeg';
-import imageeight from '../../images/siding.jpeg';
-import imagenine from '../../images/garage.jpeg';
-import imageten from '../../images/door.jpeg';
-import imageeleven from '../../images/stair.jpeg';
 import benjamin from '../../images/benjamin.jpeg';
 import purdy from '../../images/purdy.jpg';
 import threem from '../../images/threem.jpeg';
 import trimaco from '../../images/trimaco.jpeg';
 import sherwin from '../../images/sherwin.jpeg';
 import frogtape from '../../images/frogtape.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './commercial.css';
 import Marquee from "react-fast-marquee";
 import quality from "../../images/quality.png";
@@ -30,6 +18,9 @@ import commitement from "../../images/commitement.png";
 import leadership from "../../images/leadership.png";
 import Faq from "react-faq-component";
 import {data, styles, config } from "../Faq/commercialFaq";
+import { Navigation } from "../navigation/navigate";
+
+
 
 export default function commercial() {
   const images = [
@@ -59,7 +50,7 @@ export default function commercial() {
             <h1>Get a quote today!</h1>
             </div>
             <div className='col-lg-6'>
-            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            <Navigation className="btn btn-custom btn-lg btn-block quote-button" text="Get a quote" />
             </div>
             </div>
             </div>
@@ -86,7 +77,7 @@ export default function commercial() {
                   <h2>Bespoke Solutions for Every Corporate Entity</h2>
                   <p>In the world of commercial painting, universal solutions are a glaring oversight. Recognizing the nuances, our seasoned specialists take the time to comprehend the unique architectural aspects of your commercial property, environmental considerations, and your branding necessities. The result? A palette of perfection that goes beyond aesthetic enhancement—it revitalizes your professional presence, boosting your brand's visibility and reinforcing its ethos in every stroke.</p>
               </div>
-              <button type="button" className="btn btn-custom btn-lg btn-block explore">Get Started</button>
+              <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get Started" />
           </div>
         </div>
         
@@ -178,11 +169,11 @@ export default function commercial() {
                 </div>
                 <div className='col-lg-4'>
                   <img className="exterior-services-image" src={imagesix} alt="exterior-services" />
-                  <h2>Commercial Building Exterior</h2>
+                  <h2>Building Exterior</h2>
                 </div>
                 
                 <div className='justify-content-center'>
-                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
+                  <Navigation className="btn btn-custom btn-lg btn-block explore " text="Get a free quote" />
                 </div>
               </div>
               </div>

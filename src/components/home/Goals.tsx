@@ -6,16 +6,10 @@ import image5 from '../../images/pressure_wash.jpeg';
 import image4 from '../../images/jesus.jpg';
 import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Navigation } from '../navigation/navigate';
+
 
 function Goals() {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000 
-        });
-    });
 
     return (
         <>
@@ -26,7 +20,7 @@ function Goals() {
                         <h4 className='location'>Residential & Commercial Painting Company in Sultan, WA</h4>
                         <p className='first-paragraph'>Sucasa Paint and Roof stands as a premier, bonded, and insured roofing and painting contractor in the ever-evolving State of Washington. At the heart of this esteemed establishment is Jesus Perez, the diligent owner and hands-on operator. With an eye for detail and a dedication to maintaining the highest standards, Jesus ensures that every project undertaken by Sucasa Paint and Roof mirrors his personal ethos of quality, professionalism, and impeccable workmanship. His leadership goes beyond mere oversight; he's deeply involved in every phase, ensuring clients receive unparalleled service and results that stand the test of time. This level of commitment has not only earned Sucasa Paint and Roof a sterling reputation but has also cemented its place as one of the most sought-after contractors in the region.</p>
                         <p className='second-paragraph'>Jesus is deeply committed to his craft. With over two decades of dedicated experience, he brings a wealth of knowledge and expertise to every project. His longstanding commitment to the field is evident in the quality of his work, ensuring excellence in all he undertakes.</p>
-                        <button type="button" className="btn btn-custom btn-lg btn-block start">Get started</button>
+                        <Navigation className="btn btn-custom btn-lg btn-block start" text="Get Started" />
                     </div>
                     
 
@@ -76,7 +70,7 @@ function Goals() {
                             </Link>
                         </div>
                         <div className="explore-div">
-                        <button type="button" className="btn btn-custom btn-lg btn-block explore">Schedule a free estimate</button>
+                        <Navigation className="btn btn-custom btn-lg btn-block explore" text="Schedule a free estimate" />
                         </div>
                     </div>
                 </div>

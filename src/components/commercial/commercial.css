@@ -48,6 +48,7 @@
 .commercial-services{
     font-family: "General Sans";
     color: black;
+    margin-top:10%;
 }
 
 .parallax-commercial {
@@ -93,7 +94,7 @@
     transition: transform 0.3s ease-in-out; 
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     margin-bottom:5%;
-    margin-top:5%;
+  
 
 }
 

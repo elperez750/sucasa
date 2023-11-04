@@ -7,6 +7,7 @@ import Expertise from "./expertise";
 import './styles.css';
 import Sucasa from '../about-sucasa/about-sucasa';
 import React, { useEffect, useRef } from 'react';
+import { Navigation } from '../navigation/navigate';
 
 
 
@@ -21,7 +22,7 @@ export default function Home() {
         <h1 className="button-estimate">guarantee greatness</h1>
         <h2 className="other-caption">Serving the Seattle area since 2001</h2>
     
-        <button type="button" className="btn btn-custom btn-lg fire">Schedule a free estimate </button>
+        <Navigation className="btn btn-custom btn-lg fire" text="Schedule a free estimate" />
 
         
        

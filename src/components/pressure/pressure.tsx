@@ -1,19 +1,11 @@
-import React from 'react'
-import image from '../../images/exterior-image.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import image2 from '../../images/pressure-main.jpeg';
-import imageone from '../../images/whyusone.jpeg';
-import imagetwo from '../../images/seattle.jpeg';
-import imagethree from '../../images/family.jpeg';
 import imagefour from '../../images/fence-pressure.jpeg';
 import imagefive from '../../images/pressure-commercial.png';
 import imagesix from '../../images/pressure-siding.jpeg';
 import imageseven from '../../images/pressure-deck.jpeg';
 import imageeight from '../../images/pressure-driveway.jpeg';
 import imagenine from '../../images/pressure-roof.jpeg';
-import imageten from '../../images/door.jpeg';
-import imageeleven from '../../images/stair.jpeg';
 import benjamin from '../../images/benjamin.jpeg';
 import purdy from '../../images/purdy.jpg';
 import threem from '../../images/threem.jpeg';
@@ -30,6 +22,7 @@ import commitement from "../../images/commitement.png";
 import leadership from "../../images/leadership.png";
 import Faq from "react-faq-component";
 import {data, styles, config } from "../Faq/pressureFaq";
+import { Navigation } from '../navigation/navigate';
 
 export default function Pressure() {
   const images = [
@@ -59,7 +52,8 @@ export default function Pressure() {
             <h1>Get a quote today!</h1>
             </div>
             <div className='col-lg-6'>
-            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            
+            <Navigation className="btn btn-custom btn-lg btn-block quote-button" text="Get a free quote" />
             </div>
             </div>
             </div>
@@ -86,8 +80,7 @@ export default function Pressure() {
                   <h2>Revitalize, Protect, and Impress</h2>
                   <p>At Sucasa Paint and Roof, our pressure washing services go beyond mere cleaning. We offer a trifecta of benefits: revitalizing your property's appearance, protecting surfaces from potential damage due to accumulated grime, and making a lasting impression on visitors, neighbors, and clients. Entrust us with your property, and witness a transformation that elevates its value and appeal.</p>
               </div>
-             
-              <button type="button" className="btn btn-custom btn-lg btn-block explore">Get Started</button>
+              <Navigation className="btn btn-custom btn-lg btn-block explore " text="Get Started" />
           </div>
         </div>
         
@@ -114,49 +107,7 @@ export default function Pressure() {
                 ))}
               </Marquee>
             
-
-      
-
-
-
-            <div className="container pressure-services">
-              <div className='row'>
-                <div className='col-lg-12'>
-                  <h1>Services offered</h1>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagefour} alt="exterior-services" />
-                  <h2>Fence Pressure Wash</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagefive} alt="exterior-services" />
-                  <h2>Commercial Pressure Wash</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagesix} alt="exterior-services" />
-                  <h2>Siding Pressure Wash</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imageseven} alt="exterior-services" />
-                  <h2>Deck Pressure Wash</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imageeight} alt="exterior-services" />
-                  <h2>Driveway Pressure Wash</h2>
-                </div>
-                <div className='col-lg-4'>
-                  <img className="exterior-services-image" src={imagenine} alt="exterior-services" />
-                  <h2>Roof Pressure Wash</h2>
-                </div>
-                
-                <div className='justify-content-center'>
-                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
-                </div>
-              </div>
-              </div>
-
-
-            <div className="values-that-drive-work">
+              <div className="values-that-drive-work">
                 <div className="container">
                     <div className="row values">
                         <div className="col-lg-4 the-values text-start">
@@ -202,6 +153,48 @@ export default function Pressure() {
                         
                 </div>
             </div>
+      
+
+
+
+            <div className="container pressure-services">
+              <div className='row'>
+                <div className='col-lg-12'>
+                  <h1>Services offered</h1>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagefour} alt="exterior-services" />
+                  <h2>Fence Pressure Wash</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagefive} alt="exterior-services" />
+                  <h2>Commercial Pressure Wash</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagesix} alt="exterior-services" />
+                  <h2>Siding Pressure Wash</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imageseven} alt="exterior-services" />
+                  <h2>Deck Pressure Wash</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imageeight} alt="exterior-services" />
+                  <h2>Driveway Pressure Wash</h2>
+                </div>
+                <div className='col-lg-4'>
+                  <img className="exterior-services-image" src={imagenine} alt="exterior-services" />
+                  <h2>Roof Pressure Wash</h2>
+                </div>
+                
+                <div className='justify-content-center'>
+                  <Navigation className="btn btn-custom btn-lg btn-block explore " text="Get a free quote" />
+                </div>
+              </div>
+              </div>
+
+
+            
 
 
             <div className="container-faq">

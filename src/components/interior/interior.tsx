@@ -1,9 +1,4 @@
-import React from 'react'
-import image from '../../images/interior-page.jpeg';
 import image2 from '../../images/interior.jpg';
-import imageone from '../../images/whyusone.jpeg';
-import imagetwo from '../../images/seattle.jpeg';
-import imagethree from '../../images/family.jpeg';
 import imagefour from '../../images/bathroom.jpeg';
 import imagefive from '../../images/cabinet.jpg';
 import imagesix from '../../images/kitchen.jpeg';
@@ -28,6 +23,7 @@ import commitement from "../../images/commitement.png";
 import leadership from "../../images/leadership.png";
 import Faq from "react-faq-component";
 import {data, styles, config } from "../Faq/interiorFaq";
+import { Navigation } from "../navigation/navigate";
 
 
 export default function interior() {
@@ -66,7 +62,7 @@ export default function interior() {
             <h1>Get a quote today!</h1>
             </div>
             <div className='col-lg-6'>
-            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            <Navigation className="btn btn-custom btn-lg btn-block quote-button" text="Get a quote" />
             </div>
             </div>
             </div>
@@ -94,7 +90,7 @@ export default function interior() {
                   <h2>Tailored Solutions for Every Space</h2>
                   <p>In the realm of interior painting, a one-size-fits-all approach is a misfit. Recognizing this, our seasoned experts delve deep into comprehending the unique architectural nuances of your spaces, the lighting, and your aesthetic inclinations. The outcome? A symphony of colors that not only compliments your décor but also elevates your day-to-day living experience.</p>
               </div>
-              <button type="button" className="btn btn-custom btn-lg btn-block explore">Get Started</button>
+              <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get Started" />
           </div>
         </div>
         
@@ -212,7 +208,7 @@ export default function interior() {
                   <h2>Staircase Painting</h2>
                 </div>
                 <div className='justify-content-center'>
-                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
+                  <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get a free quote" />
                 </div>
               </div>
               </div>

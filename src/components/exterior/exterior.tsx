@@ -1,19 +1,12 @@
-import React from 'react'
-import image from '../../images/exterior-image.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './exterior.css';
 import image2 from '../../images/painting-exterior.jpeg';
-import imageone from '../../images/whyusone.jpeg';
-import imagetwo from '../../images/seattle.jpeg';
-import imagethree from '../../images/family.jpeg';
 import imagefour from '../../images/fence.jpeg';
 import imagefive from '../../images/exterior-door.jpeg';
 import imagesix from '../../images/brick.jpeg';
 import imageseven from '../../images/deck.jpeg';
 import imageeight from '../../images/siding.jpeg';
 import imagenine from '../../images/garage.jpeg';
-import imageten from '../../images/door.jpeg';
-import imageeleven from '../../images/stair.jpeg';
 import benjamin from '../../images/benjamin.jpeg';
 import purdy from '../../images/purdy.jpg';
 import threem from '../../images/threem.jpeg';
@@ -30,6 +23,8 @@ import commitement from "../../images/commitement.png";
 import leadership from "../../images/leadership.png";
 import Faq from "react-faq-component";
 import {data, styles, config } from "../Faq/exteriorFaq";
+import { Navigation } from "../navigation/navigate";
+
 
 export default function exterior() {
   const images = [
@@ -59,7 +54,7 @@ export default function exterior() {
             <h1>Get a quote today!</h1>
             </div>
             <div className='col-lg-6'>
-            <button type="button" className="btn btn-custom btn-lg btn-block quote-button">Get a quote</button>
+            <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get a quote" />
             </div>
             </div>
             </div>
@@ -87,7 +82,7 @@ export default function exterior() {
                   <h2>Customized Strategies for Every Facade</h2>
                   <p>In the sphere of exterior painting, generic strategies simply don't measure up. Acknowledging this, our virtuosos invest earnest effort in understanding the distinctive structural details of your property, the environmental influences, and your personal style preferences. The result? A cascade of colors that does more than adorn your exteriors—it rejuvenates your entire property, amplifying your curb appeal and enhancing your daily living backdrop.</p>
               </div>
-              <button type="button" className="btn btn-custom btn-lg btn-block explore">Get Started</button>
+              <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get Started" />
           </div>
         </div>
         
@@ -197,7 +192,7 @@ export default function exterior() {
                 </div>
                 
                 <div className='justify-content-center'>
-                  <button type="button" className="btn btn-custom btn-lg btn-block explore ">Get a free quote</button>
+                  <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get a free quote" />
                 </div>
               </div>
               </div>
