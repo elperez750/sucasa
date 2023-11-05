@@ -34,8 +34,13 @@
   overflow: hidden;
   font-family: "General Sans";
   font-size: medium;
-  
 
+}
+
+.services-container h4{
+  margin-top:3%;
+  margin-bottom:3%;
+  font-weight: lighter;
 }
 
 

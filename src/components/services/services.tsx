@@ -61,8 +61,7 @@ export default function Services() {
                 <div className="row align-items-center no-gutter">
                     <div className="col-lg-6 services-container">
                         <h1>Interior Painting</h1>
-                        <hr className='solid'></hr>
-                        <p>Transform your indoor spaces with rich colors and professional finishes. Our interior painting services offer a seamless, efficient, and meticulous application, ensuring every room truly reflects your style.</p>
+                        <h4>Transform your indoor spaces with rich colors and professional finishes. Our interior painting services offer a seamless, efficient, and meticulous application, ensuring every room truly reflects your style.</h4>
                         <Navigation className="btn btn-custom btn-lg service-button" text="Learn more" link="interior" />                    
 
                     </div>
@@ -77,16 +76,14 @@ export default function Services() {
 
                     <div className="col-lg-6 services-container">
                     <h1>Exterior Painting</h1>
-                        <hr className='solid'></hr>
-                        <p>Boost your home's curb appeal with a fresh coat of paint. Our exterior painting professionals ensure a clean, detailed appearance that not only protects but also beautifies your home's facade.</p>
+                        <h4>Boost your home's curb appeal with a fresh coat of paint. Our exterior painting professionals ensure a clean, detailed appearance that not only protects but also beautifies your home's facade.</h4>
                         <Navigation className="btn btn-custom btn-lg service-button" text="Learn more" link="exterior" />                    
 
                     </div>
 
                     <div className="col-lg-6 services-container">
                         <h1>Commercial Painting</h1>
-                        <hr className='solid'></hr>
-                        <p>Present your business in the best light with top-notch commercial painting. Whether it's an office, retail space, or industrial setting, our team delivers high-quality finishes that echo professionalism.</p>
+                        <h4>Present your business in the best light with top-notch commercial painting. Whether it's an office, retail space, or industrial setting, our team delivers high-quality finishes that echo professionalism.</h4>
                         <Navigation className="btn btn-custom btn-lg service-button" text="Learn more" link="commercial" />                    
                     </div>
 
@@ -101,9 +98,8 @@ export default function Services() {
                     
                     <div className="col-lg-6 order-md-1 services-container">
                         
-                        <h1>Pressure</h1>
-                            <hr className='solid'></hr>
-                            <p>Revitalize and clean surfaces with our pressure washing services. Effectively remove dirt, grime, and mildew, restoring the beauty and extending the life of your property's exteriors.</p>
+                        <h1>Pressure Washing</h1>
+                            <h4>Revitalize and clean surfaces with our pressure washing services. Effectively remove dirt, grime, and mildew, restoring the beauty and extending the life of your property's exteriors.</h4>
                             <Navigation className="btn btn-custom btn-lg service-button" text="Learn more" link="pressure" />                    
                     </div>
                 </div>

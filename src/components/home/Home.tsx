@@ -24,15 +24,9 @@ export default function Home() {
     
         <Navigation className="btn btn-custom btn-lg fire" text="Schedule a free estimate" />
 
-        
-       
-    
-    
       
     </div>
-    <script>
-     
-    </script>
+   
    
     <Goals />
     <Expertise />

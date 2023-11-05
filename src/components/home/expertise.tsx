@@ -14,8 +14,12 @@ import project5 from '../../images/project-5.jpeg';
 import project6 from '../../images/project-6.jpeg';
 import project7 from '../../images/project-7.jpeg';
 import project8 from '../../images/project-8.jpeg';
-
-
+import roller from '../../images/roller.svg';
+import trophy from '../../images/trophy.svg';
+import handshake from '../../images/handshake.svg';
+import shield from '../../images/shield.svg';
+import tag from '../../images/tag.svg';
+import eco from '../../images/eco.svg';
 
 
 function Expertise() {
@@ -27,55 +31,80 @@ function Expertise() {
 
     return (
         <>
-
-            <div className="why-us">
-                <h2 className="text-center mb-4">Why Choose Us?</h2>
-                <div className='container'>
-                <div className="row">
-                    <div className="col-lg-4">
-                        <div className="image-container-home">
-                            <img className="why-us-image" src={image} alt="why-us-image"></img>
-                            <div className="overlay-content-whyus">
-                                <h3 className="header-why-us">Experertise</h3>
-                                <h2 className='bold'>Unparalleled Precision in Every Project</h2>
-                                <div className="more-text">
-                                    <p className='white'>At Sucasa Paint and Roofcare, every home we touch becomes a testament to our excellence. Our expertise isn't just in applying paint or fixing roofs; it's about understanding each space and elevating it beyond expectations.</p>
-                                <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
-
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="image-container-home">
-                            <img className="why-us-image" src={image2} alt="why-us-image"></img>
-                            <div className="overlay-content-whyus">
-                                <h3 className="header-why-us">Experience</h3>
-                                 <h2 className='bold'>Serving Seattle-Area Homeowners Since 2001</h2>
-                                <div className="more-text">
-                                    <p className='white'>With over two decades in the business, Sucasa Paint and Roof stands as one of Seattle's most seasoned painting firms. </p>
-                                <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className='image-container-home'>
-                            <img className="why-us-image" src={image3} alt="why-us-image"></img>
-                            <div className="overlay-content-whyus">
-                                <h3 className="header-why-us">Dedication</h3>
-                                <h2 className='bold'>From Concept to Completion: Your Vision, Our Mission</h2>
-                                <div className="more-text">
-                                    <p className='white'>At Sucasa Paint and Roofcare, our unwavering commitment goes beyond just paint and tiles. Every brushstroke and every shingle reflects years of honed craftsmanship. ensuring that our clients receive nothing but the best. </p>
-                                    <button type="button" className="btn btn-custom btn-lg btn-block explore">Explore</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div className="container all-cards mt-4">
+        <div className="row g-4"> 
+            <div className="col-md-12">
+                <h1>Why Choose us</h1>
+            </div>
+            <div className="col-md-4 col-sm-6"> 
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={roller} alt="Card image cap" />
+                <h5 className="card-title">Quality of Workmanship</h5>
+                <p className="card-text">Our dedication to excellence is evident in every brush stroke. With meticulous preparation, skilled application, and a thorough cleanup, we ensure a flawless finish. Our team uses the latest techniques and top-tier materials to deliver a durable and beautiful result that stands the test of time. We don’t just paint your spaces; we perfect them.</p>
                 </div>
             </div>
+            </div>
+            
+            <div className="col-md-4 col-sm-6">
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={trophy} alt="Card image cap" />
 
+                <h5 className="card-title">Years of Experience</h5>
+                <p className="card-text">With over a decade in the painting business, our depth of experience speaks for itself. Our seasoned professionals bring a wealth of knowledge to every project, ensuring that every decision, from color selection to finish type, is informed by years of successful practice. Our long-standing presence in the community has been built on trust and consistently exceptional service.</p>
+                </div>
+            </div>
+    </div>
+
+    <div className="col-md-4 col-sm-6">
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={tag} alt="Card image cap" />
+
+                <h5 className="card-title">Competitive Pricing</h5>
+                <p className="card-text">We believe in fair, transparent pricing without compromising on quality. Our competitive rates reflect our commitment to giving you the best value. Detailed quotes ensure you understand what you are paying for, with no hidden fees or surprises. We strive to work within your budget to transform your space into something you’ll love.</p>
+                </div>
+            </div>
+    </div>
+
+    <div className="col-md-4 col-sm-6">
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={handshake} alt="Card image cap" />
+
+                <h5 className="card-title">Customer Satisfaction Guarantee</h5>
+                <p className="card-text">Your happiness is the measure of our success. That’s why we back our work with a customer satisfaction guarantee. If any aspect of our work doesn’t meet your expectations, we pledge to make it right. We value our clients' feedback and work tirelessly to cultivate lasting relationships built on reliability and satisfaction.</p>
+                </div>
+            </div>
+    </div>
+
+    <div className="col-md-4 col-sm-6">
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={shield} alt="Card image cap" />
+
+                <h5 className="card-title">Licensed and Insured</h5>
+                <p className="card-text">Rest easy knowing you’re in safe hands. Our business is fully licensed, adhering to the industry's best practices and standards. We are also comprehensively insured, protecting your property and our team in the event of an accident. This commitment to professionalism means your project is always secure with us.</p>
+                </div>
+            </div>
+    </div>
+
+    <div className="col-md-4 col-sm-6">
+            <div className="card h-100 shadow">
+                <div className="card-body">
+                <img className="card-img-top" src={eco} alt="Card image cap" />
+
+                <h5 className="card-title">Eco-Friendly Options</h5>
+                <p className="card-text">Sustainability is at the core of our services. We proudly offer eco-friendly painting solutions, including low-VOC and zero-VOC paints that promote healthier indoor air quality and are better for the environment. Our eco-conscious approach extends to responsible waste management and energy-efficient practices, ensuring a greener footprint for every project we undertake.</p>
+                </div>
+            </div>
+    </div>
+    
+  
+
+  </div>
+</div>
 
             <div className="quote-container">
             <div className='container quote'>
@@ -139,7 +168,7 @@ function Expertise() {
 
                         </div>
                         <div className="col-lg-6 col-md-12">
-                            <img className="fluid" src={project1} alt="project-image"></img>
+                            <img className="maestro" src={project1} alt="project-image"></img>
                         </div>
                     </div>
                 </div>

@@ -2,10 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from '../../images/interior.jpg';
 import image2 from '../../images/exterior.jpg';
 import image3 from '../../images/commercial.jpg';
-import image5 from '../../images/pressure_wash.jpeg';
+import image5 from '../../images/pressure_wash.webp';
 import image4 from '../../images/jesus.jpg';
 import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
 import { Navigation } from '../navigation/navigate';
 
 
@@ -13,14 +12,34 @@ function Goals() {
 
     return (
         <>
-            <div className="container who-we-are-container">
+          
+            
+
+
+                  
+                <div className='row'>
+                    <div className='col-lg-4'></div>
+                    <div className='col-lg-4 intro'>
+                        
+                        <h4>When it comes to painting..</h4>
+                        <h1>Our work is nothing </h1>
+                        <h1>short of stunning. </h1>
+                        <p>Sucasa Paint and Roof is a company dedicated to perfection. We know how important your home is, so we want you to feel relaxed knowing that your future projects are in good hands.</p>
+
+                        <Navigation className="btn btn-custom btn-lg btn-block explore" text="Explore our services" link='services' />
+
+                    </div>  
+                    <div className='col-lg-4'></div>
+                </div>
+
+                <div className="about-sucasa-container">
                 <div className="row">
                     <div className="col-lg-6">
                         <h1 className='Who'>Who we are</h1>
-                        <h4 className='location'>Residential & Commercial Painting Company in Sultan, WA</h4>
-                        <p className='first-paragraph'>Sucasa Paint and Roof stands as a premier, bonded, and insured roofing and painting contractor in the ever-evolving State of Washington. At the heart of this esteemed establishment is Jesus Perez, the diligent owner and hands-on operator. With an eye for detail and a dedication to maintaining the highest standards, Jesus ensures that every project undertaken by Sucasa Paint and Roof mirrors his personal ethos of quality, professionalism, and impeccable workmanship. His leadership goes beyond mere oversight; he's deeply involved in every phase, ensuring clients receive unparalleled service and results that stand the test of time. This level of commitment has not only earned Sucasa Paint and Roof a sterling reputation but has also cemented its place as one of the most sought-after contractors in the region.</p>
-                        <p className='second-paragraph'>Jesus is deeply committed to his craft. With over two decades of dedicated experience, he brings a wealth of knowledge and expertise to every project. His longstanding commitment to the field is evident in the quality of his work, ensuring excellence in all he undertakes.</p>
-                        <Navigation className="btn btn-custom btn-lg btn-block start" text="Get Started" />
+                        <h4 className='home-town'>Residential & Commercial Painting Company in Sultan, WA</h4>
+                        <p className='first-paragraph'>Sucasa Paint and Roof stands as a premier, bonded, and insured roofing and painting contractor in the ever-evolving State of Washington. At the heart of this esteemed establishment is Jesus Perez, the diligent owner and hands-on operator. With an eye for detail and a dedication to maintaining the highest standards, Jesus ensures that every project undertaken by Sucasa Paint and Roof mirrors his personal ethos of quality, professionalism, and impeccable workmanship. His leadership goes beyond mere oversight; he's deeply involved in every phase, ensuring clients receive unparalleled service and results that stand the test of time.</p>
+                        <p className='second-paragraph'>This level of commitment has not only earned Sucasa Paint and Roof a sterling reputation but has also cemented its place as one of the most sought-after contractors in the region. Jesus is deeply committed to his craft. With over two decades of dedicated experience, he brings a wealth of knowledge and expertise to every project. His longstanding commitment to the field is evident in the quality of his work, ensuring excellence in all he undertakes.</p>
+                        <Navigation className="btn btn-custom btn-lg btn-block explore" text="Get Started" />
                     </div>
                     
 
@@ -29,7 +48,6 @@ function Goals() {
                     </div>
                 </div>
             </div>
-           
               
             
 

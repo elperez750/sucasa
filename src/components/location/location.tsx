@@ -13,6 +13,8 @@ import image11 from "../../images/monroe.jpeg"
 import image12 from "../../images/renton.jpeg"
 import image13 from "../../images/bothell.png"
 import image14 from "../../images/tacoma.jpeg"
+import image15 from "../../images/kennmore.jpeg"
+
 
 
 
@@ -28,7 +30,12 @@ export default function location() {
     <div className="parallax-locations">
   
     </div>
-    <div className="service">Locations</div>
+    <div className="location">Service Locations</div>
+    
+     <h2 className="other-caption-locations">SERVING WESTERN WASHINGTON SINCE 2001</h2>
+
+      
+    
 
 </div>
    
@@ -94,6 +101,10 @@ export default function location() {
       <div className="col-lg-3">
       <img className="image-circles" src={image14} alt="Description of Image 1"></img>
       <h1>Tacoma</h1>
+      </div>
+      <div className="col-lg-3">
+      <img className="image-circles" src={image15} alt="Description of Image 1"></img>
+      <h1>Kenmore</h1>
       </div>
     </div>
     </body>

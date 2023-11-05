@@ -87,6 +87,11 @@
     font-weight: 700;
 }
 
+
+.maestro{
+    height:100%;
+    width:100%;
+}
 /* Background Styles */
 .background-container {
     display: flex;
@@ -164,6 +169,11 @@
     pointer-events: none;
 }
 
+
+.why-choose-use{
+    font-family: "General Sans";
+    
+}
 .why-us-image {
     width: 100%;
     display: block;
@@ -268,11 +278,72 @@
 }
 
 
-.why-us {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-family: "General Sans";
-}
+
+.card {
+    border-radius: 0.1rem;
+    transition: transform 0.2s; 
+    margin-bottom:10%;
+  }
+  
+
+  .card-img-top{
+    width:20%;
+    height:15%;
+    
+  }
+
+  
+
+
+  .card:hover {
+    transform: scale(1.03); 
+  }
+  
+  .card-title {
+    color: #E25141; 
+    margin-bottom: 5%; 
+  }
+  
+  .card-text {
+    font-size: 0.9rem; /* Slightly smaller text size */
+    color: #6c757d; /* Bootstrap secondary text color */
+  }
+  
+  /* Ensuring cards have equal height in a row */
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+  
+  /* Spacing below each card for when they wrap on smaller screens */
+  @media (max-width: 991px) {
+    .card {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Extra spacing to ensure cards don't touch each other's sides */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Shadow and other effects */
+  .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); /* Bootstrap's default shadow */
+  }
+  
+  /* Ensuring that cards on small devices don't touch the edges of the screen */
+  @media (max-width: 767px) {
+    .container {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
 
 .fluid{
     transition-duration: 0.5s; /* Increase time for a slower transition */

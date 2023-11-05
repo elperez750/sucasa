@@ -56,7 +56,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 .contact-form{
-    margin-top:5%;
+   
     padding:3%;
     background-color: aliceblue;
 }
@@ -77,3 +77,35 @@ input[type="number"]::-webkit-outer-spin-button {
     font-family: "General Sans";
 }
 
+
+.form-button{
+    background-color: #E25141;
+    color: white;
+}
+
+.form-button:hover{
+    background-color: #E25141;
+    color: white;
+}
+
+.contact-header {
+    color: #E25141;
+    font-family: "General Sans";
+    margin-top:5%;
+}
+
+.contact-header h4{
+    color: #12213E;
+    font-weight: lighter;
+}
+
+.map{
+    width: 100%;
+    height:100%;
+    
+}
+
+.all-stuff{
+    margin-top: 5%;
+    margin-bottom:10%;
+}

@@ -39,8 +39,7 @@ export default function Pressure() {
     <div className="parallax-pressure">
   
     </div>
-  <div className="service">Pressure</div>
-  <h2 className='other-caption-pressure '><span>Serving the Seattle Area since 2001</span></h2>
+  <div className="service">Pressure Washing</div>
 
 </div>
 

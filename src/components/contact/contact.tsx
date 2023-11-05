@@ -105,11 +105,18 @@ export default function contact (){
     <h2 className='other-caption-contact'><span>START YOUR NEXT PROJECT TODAY</span></h2>
 
   </div>
-
-    <h1>Schedule your FREE estimate</h1>
     <div className="row">
+      <div className="col-lg-4"></div>
+    <div className='col-lg-4 contact-header'>
+      <h1 >Schedule your FREE estimate</h1>
+      <h4>Just one click away from starting your dream project</h4>
+    </div>
+    <div className="col-lg-4"></div>
+    </div>
+
+    <div className="row all-stuff">
       <div className="col-lg-6">
-         
+         <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.564336307191!2d-121.74129088842123!3d47.867400169812306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549abc95a06aed0f%3A0xf02b3d8ab12a79f7!2s36731%20U.S.%20Rte%202%2C%20Sultan%2C%20WA%2098294!5e0!3m2!1sen!2sus!4v1699066421404!5m2!1sen!2sus" style={{border:0}}  loading="lazy"   referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     <div className="contact-form col-lg-6">
@@ -263,7 +270,8 @@ export default function contact (){
       {errors.projectDescription && touched.projectDescription && <p className="errors">{errors.projectDescription}</p>}
       </div>
       </div>
-      <button disabled={isSubmitting} type='submit' className="btn btn-success form-button">Submit</button>
+
+      <button disabled={isSubmitting} type='submit' className="btn form-button">Submit</button>
     
     </form>
     </div>
