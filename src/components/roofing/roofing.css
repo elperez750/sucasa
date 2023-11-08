@@ -1,0 +1,33 @@
+.parallax-roofing {
+    background-image: url('../../images/roofing.jpeg');
+    filter: brightness(50%);
+    width:100%;
+    height:30%;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .other-caption-roofing{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    color: white;
+    font-family: "General Sans" !important;
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top:auto;
+  }
+
+
+
+  .roofing-main{
+    font-family: "General Sans";
+    margin-bottom: 10%;
+ 
+}

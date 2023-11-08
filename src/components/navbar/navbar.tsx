@@ -82,9 +82,14 @@ title={
 >
 
                   <NavDropdown.Item className='service-links' as={Link} to="/Interior">Interior Painting</NavDropdown.Item>
+                  <NavDropdown.Divider />
                   <NavDropdown.Item className='service-links' as={Link} to="/Exterior">Exterior Painting</NavDropdown.Item>
+                  <NavDropdown.Divider />
                   <NavDropdown.Item className='service-links' as={Link} to="/Commercial">Commercial Painting</NavDropdown.Item>
+                  <NavDropdown.Divider />
                   <NavDropdown.Item className='service-links' as={Link} to="/Pressure">Pressure Washing</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item className='service-links' as={Link} to="/Roofing">Roofing</NavDropdown.Item>
 
               </NavDropdown>
               <Nav.Link href="/projects" className="my-link">Projects</Nav.Link>
