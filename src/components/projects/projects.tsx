@@ -37,7 +37,7 @@ export default function Projects() {
 
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <div className="card" >
               <img src={image1} className="project-card-img" alt="..." />
               <div className="card-body">
@@ -52,7 +52,7 @@ export default function Projects() {
           </div>
 
 
-          <div className="col-md-4">
+          <div className="col-md-6">
             <div className="card" >
               <img src={image1} className="project-card-img" alt="..." />
               <div className="card-body">
@@ -67,7 +67,7 @@ export default function Projects() {
           </div>
 
 
-          <div className="col-md-4">
+          <div className="col-md-6">
             <div className="card" >
               <img src={image1} className="project-card-img" alt="..." />
               <div className="card-body">
