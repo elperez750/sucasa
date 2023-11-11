@@ -18,7 +18,7 @@ export default function Services() {
       <div className="image-container">
         <div className="parallax-services"></div>
 
-        <div className="service">SERVICES</div>
+        <div className="service_header">SERVICES</div>
         <h2 className="other-caption-services">
           THE RIGHT COMPANY FOR ALL YOUR PAINTING WORK
         </h2>

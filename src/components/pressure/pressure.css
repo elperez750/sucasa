@@ -8,6 +8,20 @@
     margin-bottom:10%;
 }
 
+.pressure_heading{
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    color: white;
+    font-family: "General Sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top:auto;
+}
+
 
 .pressure-banner{
     position: absolute;
@@ -121,7 +135,7 @@
 
 .other-caption-pressure{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); /* center the text */
     color: white;

@@ -24,7 +24,7 @@ export default function location() {
       <body>
         <div className="image-container">
           <div className="parallax-locations"></div>
-          <div className="location">Service Locations</div>
+          <div className="location_header">Locations</div>
 
           <h2 className="other-caption-locations">
             SERVING WESTERN WASHINGTON SINCE 2001

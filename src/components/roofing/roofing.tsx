@@ -30,7 +30,7 @@ export default function Roofing() {
     <>
       <div className="image-container">
         <div className="parallax-roofing"></div>
-        <div className="service">Roofing</div>
+        <div className="roofing_header">Roofing</div>
         <h2 className="other-caption-roofing ">
           <span>
           Quality Roofing That Stands the Test of Time

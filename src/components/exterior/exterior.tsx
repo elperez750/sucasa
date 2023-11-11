@@ -41,7 +41,7 @@ export default function exterior() {
     <div className="parallax-exterior">
   
     </div>
-  <div className="service">Exterior</div>
+  <h1 className="exterior_header">Exterior</h1>
   <h2 className='other-caption-exterior '><span>Explore a world where comfort meets impeccable taste.</span></h2>
 
 </div>

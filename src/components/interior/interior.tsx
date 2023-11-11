@@ -31,7 +31,7 @@ export default function interior() {
     <>
       <div className="image-container">
         <div className="parallax"></div>
-        <div className="service">Interior</div>
+        <div className="interior_header">Interior</div>
         <h2 className="other-caption-interior ">
           <span>Explore a world where comfort meets impeccable taste.</span>
         </h2>

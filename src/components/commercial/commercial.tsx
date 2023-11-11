@@ -27,7 +27,7 @@ export default function commercial() {
     <>
       <div className="image-container">
         <div className="parallax-commercial"></div>
-        <div className="service">Commercial</div>
+        <div className="commercial_header">Commercial</div>
         <h2 className="other-caption-commercial ">
           <span>
             NAVIGATE A REALM WHERE EFFICIENCY MERGES WITH EXQUISITE ELEGANCE.
