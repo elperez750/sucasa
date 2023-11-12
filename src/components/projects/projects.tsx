@@ -13,6 +13,7 @@ import image9 from "../../images/fence.jpeg";
 import image10 from "../../images/garage.jpeg";
 import image11 from "../../images/gutter.jpeg";
 import image12 from "../../images/kitchen.jpeg";
+import image13 from "../../images/roofing.jpeg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -110,6 +111,14 @@ export default function Projects() {
       description: "Interior Painting",
       imageUrl: image12,
     },
+
+    {
+      id: crypto.randomUUID(),
+      type: "roofing",
+      title: "Lynnwood Roofing",
+      description: "Roofing",
+      imageUrl: image13,
+    },
   ];
 
   const [filter, setFilter] = useState("all");
@@ -154,43 +163,75 @@ export default function Projects() {
         </div>
 
         <div className="container project-text">
-          <h1 className="mb-5 projects-main"><em>See what we've done</em></h1>
+          <h1 className="mb-5 projects-main">
+            <em>See what we've done</em>
+          </h1>
           <p className="mb-5 projects-paragraph">
-          Our team specializes in transforming spaces with meticulous attention to detail and a deep commitment to quality. Each project is a unique blend of client vision and our creative expertise, resulting in spaces that are not just aesthetically pleasing but also deeply personal. From modern renovations to classic restorations, we ensure every project reflects our standard of excellence and an enduring sense of style.
+            Our team specializes in transforming spaces with meticulous
+            attention to detail and a deep commitment to quality. Each project
+            is a unique blend of client vision and our creative expertise,
+            resulting in spaces that are not just aesthetically pleasing but
+            also deeply personal. From modern renovations to classic
+            restorations, we ensure every project reflects our standard of
+            excellence and an enduring sense of style.
           </p>
         </div>
 
         <div className="container">
-          <span
-            className="filter-text"
-            onClick={() => handleFilterChange("all")}
-          >
-            All
-          </span>
-          <span
-            className="filter-text"
-            onClick={() => handleFilterChange("exterior")}
-          >
-            Exterior
-          </span>
-          <span
-            className="filter-text"
-            onClick={() => handleFilterChange("interior")}
-          >
-            Interior
-          </span>
-          <span
-            className="filter-text"
-            onClick={() => handleFilterChange("commercial")}
-          >
-            Commercial
-          </span>
-          <span
-            className="filter-text"
-            onClick={() => handleFilterChange("pressure")}
-          >
-            Pressure Washing
-          </span>
+          <div className="row">
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("all")}
+              >
+                All
+              </span>
+            </div>
+
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("exterior")}
+              >
+                Exterior
+              </span>
+            </div>
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("interior")}
+              >
+                Interior
+              </span>
+            </div>
+
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("commercial")}
+              >
+                Commercial
+              </span>
+            </div>
+
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("pressure")}
+              >
+                Washing
+              </span>
+            </div>
+
+            <div className="col-md-2">
+              <span
+                className="filter-text"
+                onClick={() => handleFilterChange("roofing")}
+              >
+                Roofing
+              </span>
+            </div>
+          </div>
 
           <div className="row mt-5 project-display">
             {filteredProjects.map((project) => (

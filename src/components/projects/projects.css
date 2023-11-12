@@ -52,9 +52,10 @@
 }
 
 .filter-text {
-  margin: 5%;
   font-family: "General Sans";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  display: block; 
+  text-align: center;
 }
 
 .filter-text:hover {
