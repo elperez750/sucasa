@@ -1,77 +1,107 @@
 @font-face {
-    font-family: "General Sans";
-    src: url('../../GeneralSans_Complete/Fonts/Variable/GeneralSans-Variable.ttf') format('woff2');
-  }
-
-.other-caption-projects{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    font-size: 1rem;
-    transform: translate(-50%, -50%); /* center the text */
-    color: white;
-    font-family: "General Sans" !important;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-top:auto;
-  }
-
-
-  .quote-container-projects{
-    background-color: #12213E;
-    color:white;
-    margin-bottom:10%;
+  font-family: "General Sans";
+  src: url("../../GeneralSans_Complete/Fonts/Variable/GeneralSans-Variable.ttf")
+    format("woff2");
 }
 
-.project-card-img{
-    width:100%;
-    height:100%;
+.other-caption-projects {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;
+  font-family: "General Sans";
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: auto;
 }
 
-.body{
-    font-family: "General Sans"
+.quote-container-projects {
+  background-color: #12213e;
+  color: white;
+  margin-bottom: 5%;
 }
-  .project_header {
-    font-size: 5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* center the text */
-    color: white;
-    font-family: "General Sans";
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-top:auto;
 
-  }
+.project-display {
+  display: flex;
+  align-items: stretch;
+}
 
-  .other-caption-projects-top {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* center the text */
-    color: white;
-    font-family: "General Sans" !important;
-    font-weight: bolder;
+.card-projects:hover {
+  transform: scale(1.05);
+}
+
+.projects-main{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #e25141;
   
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-top:auto;
+}
 
-  }
+.project-card-img {
+  width: 100%;
+  height: 300px;
+}
+
+.projects-paragraph{
+  line-height: 2rem;
+  font-style: italic;
+
+}
+
+.filter-text {
+  margin: 5%;
+  font-family: "General Sans";
+  font-size: 1.5rem;
+}
+
+.filter-text:hover {
+  color: #e25141;
+  cursor: pointer;
+}
+.body {
+  font-family: "General Sans";
+}
 
 
-  .parallax-projects {
-  
-    background-image: url('../../images/projects.jpeg');
-    filter: brightness(50%);
-    width:100%;
-    height:30%;
-    min-height: 700px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.project_header {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;
+  font-family: "General Sans";
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: auto;
+}
+
+.other-caption-projects-top {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;
+  font-family: "General Sans";
+  font-weight: bolder;
+
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: auto;
+}
+
+.parallax-projects {
+  background-image: url("../../images/projects.jpeg");
+  filter: brightness(50%);
+  width: 100%;
+  height: 30%;
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
